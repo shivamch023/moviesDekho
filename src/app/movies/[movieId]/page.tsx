@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import { FaDownload, FaEye, FaPlus } from "react-icons/fa";
@@ -35,10 +36,19 @@ const MovieDetailsPage: React.FC = () => {
       movie.genre === currentMovie.genre && movie.id !== currentMovie.id
   );
 
+  // State to toggle view more movies
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [showAllMovies, setShowAllMovies] = useState(false);
+
   // Handle movie click for related movies
   const handleMovieClick = (movieId: number) => {
     router.push(`/movies/${movieId}`);
   };
+
+  // Display only 5 related movies initially
+  const displayedMovies = showAllMovies
+    ? relatedMovies
+    : relatedMovies.slice(0, 5);
 
   return (
     <div className="p-4 bg-black mt-[5rem] min-h-screen">
@@ -73,7 +83,7 @@ const MovieDetailsPage: React.FC = () => {
           </p>
           <p className="mb-2 text-gray-300">
             <span className="font-semibold text-white">Genre:</span>{" "}
-            {currentMovie.genre}
+            {currentMovie.genre} 
           </p>
           <p className="mb-4 text-gray-300">
             <span className="font-semibold text-white">Starring:</span>{" "}
@@ -113,8 +123,8 @@ const MovieDetailsPage: React.FC = () => {
           Related Movies
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {relatedMovies.length > 0 ? (
-            relatedMovies.map((movie) => (
+          {displayedMovies.length > 0 ? (
+            displayedMovies.map((movie) => (
               <div
                 key={movie.id}
                 onClick={() => handleMovieClick(movie.id)}
@@ -151,6 +161,16 @@ const MovieDetailsPage: React.FC = () => {
             </p>
           )}
         </div>
+
+        {/* View More Button */}
+        {relatedMovies.length > 5 && !showAllMovies && (
+          <button
+            onClick={() => setShowAllMovies(true)}
+            className="mt-4 px-6 py-2 bg-yellow-500 text-black rounded-lg shadow-md hover:bg-yellow-600 transition"
+          >
+            View More
+          </button>
+        )}
       </div>
     </div>
   );

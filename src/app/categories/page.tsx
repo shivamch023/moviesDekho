@@ -9,7 +9,7 @@ const CategoriesPage: React.FC = () => {
   const categories = Array.from(new Set(movies.map((movie) => movie.category)));
 
   return (
-    <div className="p-4 mt-[5rem] ">
+    <div className="p-4 mt-[5rem] h-[50vh] ">
       <h1 className="text-3xl font-bold mb-6 text-center text-yellow-300">
         Movie Categories
       </h1>
