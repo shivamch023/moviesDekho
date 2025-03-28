@@ -1,12 +1,13 @@
 "use client";
 
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import { FaDownload, FaEye, FaPlus } from "react-icons/fa";
 import { movies } from "@/app/data/movies"; // No need to import Movie if not using it
 
 const MovieDetailsPage: React.FC = () => {
   const { movieId } = useParams(); // movieId could be string | string[]
+  const router = useRouter();
 
   // Ensure movieId is always a string
   const movieIdStr = Array.isArray(movieId) ? movieId[0] : movieId;
@@ -27,6 +28,17 @@ const MovieDetailsPage: React.FC = () => {
       </div>
     );
   }
+
+  // Get related movies based on the genre
+  const relatedMovies = movies.filter(
+    (movie) =>
+      movie.genre === currentMovie.genre && movie.id !== currentMovie.id
+  );
+
+  // Handle movie click for related movies
+  const handleMovieClick = (movieId: number) => {
+    router.push(`/movies/${movieId}`);
+  };
 
   return (
     <div className="p-4 bg-black mt-[5rem] min-h-screen">
@@ -92,6 +104,52 @@ const MovieDetailsPage: React.FC = () => {
               Add to Watchlist <FaPlus />
             </button>
           </div>
+        </div>
+      </div>
+
+      {/* Related Movies Section */}
+      <div className="mt-8">
+        <h2 className="text-2xl font-bold text-yellow-500 mb-4">
+          Related Movies
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          {relatedMovies.length > 0 ? (
+            relatedMovies.map((movie) => (
+              <div
+                key={movie.id}
+                onClick={() => handleMovieClick(movie.id)}
+                className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+              >
+                {/* Movie Image */}
+                <Image
+                  src={movie.image}
+                  alt={movie.title}
+                  width={400}
+                  height={600}
+                  className="rounded-t-lg w-full h-[300px] object-cover"
+                />
+                {/* Movie Details */}
+                <div className="p-4">
+                  <h2 className="text-lg font-bold mb-2 text-center text-yellow-500">
+                    {movie.title}
+                  </h2>
+                  <p className="text-sm text-gray-300 mb-1">
+                    Category: {movie.category}
+                  </p>
+                  <p className="text-sm text-gray-300 mb-1">
+                    Genre: {movie.genre}
+                  </p>
+                  <p className="text-xs text-gray-300 mb-1">
+                    Starring: {movie.actor} & {movie.actress}
+                  </p>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p className="text-center text-gray-300">
+              No related movies found.
+            </p>
+          )}
         </div>
       </div>
     </div>
