@@ -68,10 +68,7 @@ const MoviesPage: React.FC = () => {
                   Genre: {movie.genre}
                 </p>
                 <p className="text-xs text-gray-300 mb-1">
-                  Actor: {movie.actor}
-                </p>
-                <p className="text-xs text-gray-300 mb-4">
-                  Actress: {movie.actress}
+                  Starring: {movie.actor} & {movie.actress}
                 </p>
 
                 {/* Action Buttons */}
