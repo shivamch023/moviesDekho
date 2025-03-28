@@ -5,7 +5,10 @@ export interface Movie {
   genre: string;
   actor: string;
   actress: string;
-  image: string; // Added image field
+  image: string;
+  desc:string;
+  duration:string;
+  imdbRating:string;
 }
 
 export const movies: Movie[] = [
@@ -17,7 +20,9 @@ export const movies: Movie[] = [
     actor: "Sam Worthington",
     actress: "Zoe Saldana",
     image: "/assets/hollywood/avatarageofwater.jpg",
-    
+    desc: "A visually stunning underwater journey of family, survival, and connection on Pandora.",
+    duration: "3h 12m",
+    imdbRating: "7.8",
   },
   {
     id: 2,
@@ -27,6 +32,9 @@ export const movies: Movie[] = [
     actor: "N.T. Rama Rao Jr.",
     actress: "Alia Bhatt",
     image: "/assets/bollywood/rrr.jpg",
+    desc: "A fictional tale of two legendary revolutionaries, Alluri Sitarama Raju and Komaram Bheem, their friendship, and their fight against oppression in pre-independent India.",
+    duration: "3h 7m",
+    imdbRating: "8.0",
   },
   {
     id: 3,
@@ -36,6 +44,9 @@ export const movies: Movie[] = [
     actor: "Vijay",
     actress: "Malavika Mohanan",
     image: "/assets/southindian/mas.jpg",
+    desc: "A troubled professor is sent to a juvenile school, where he clashes with a ruthless gangster exploiting young students for his criminal empire.",
+    duration: "2h 58m",
+    imdbRating: "7.9",
   },
   {
     id: 4,
@@ -45,6 +56,9 @@ export const movies: Movie[] = [
     actor: "Allu Arjun",
     actress: "Rashmika Mandanna",
     image: "/assets/southindian/pushpa.jpg",
+    desc: "A resilient laborer rises through the ranks of the red sandalwood smuggling trade, defying powerful enemies and embracing his own rules in the rugged forests of Andhra Pradesh.",
+    duration: "2h 59m",
+    imdbRating: "7.6",
   },
   {
     id: 5,
@@ -54,6 +68,9 @@ export const movies: Movie[] = [
     actor: "Dinesh Lal Yadav",
     actress: "Amrapali Dubey",
     image: "/assets/bhojpuri/nirhuahinduatani1.jpg",
+    desc: "Nirahua Hindustani एक ग्रामीण युवक की कहानी है, जो अपनी सादगी और प्रेम से शहरी लड़की का दिल जीत लेता है।",
+    duration: "2h 15m",
+    imdbRating: "6.5",
   },
   {
     id: 6,
@@ -63,6 +80,9 @@ export const movies: Movie[] = [
     actor: "Qu Chuxiao",
     actress: "Zhao Jinmai",
     image: "/assets/hollywood/thewandering.jpg",
+    desc: "The Wandering Earth follows humanity's attempt to survive by moving Earth away from the dying Sun using massive engines, while facing cosmic challenges.",
+    duration: "2h 5m",
+    imdbRating: "6.0",
   },
   {
     id: 7,
@@ -72,6 +92,9 @@ export const movies: Movie[] = [
     actor: "Robert Downey Jr.",
     actress: "Gwyneth Paltrow",
     image: "/assets/hollywood/ironman.jpg",
+    desc: "A billionaire industrialist and genius inventor, Tony Stark, is kidnapped by terrorists, and uses his intelligence to build a high-tech suit of armor to escape.",
+    duration: "2h 6m",
+    imdbRating: "7.9",
   },
   {
     id: 8,
@@ -81,6 +104,9 @@ export const movies: Movie[] = [
     actor: "Christian Bale",
     actress: "Maggie Gyllenhaal",
     image: "/assets/hollywood/darknight.jpeg",
+    desc: "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
+    duration: "2h 32m",
+    imdbRating: "9.0",
   },
   {
     id: 9,
@@ -90,6 +116,9 @@ export const movies: Movie[] = [
     actor: "Álvaro Morte",
     actress: "Úrsula Corberó",
     image: "/assets/hollywood/moneyheist.jpg",
+    desc: "A criminal mastermind plans the biggest heist in recorded history — to print billions of euros in the Royal Mint of Spain.",
+    duration: "1h 5m (per episode)",
+    imdbRating: "8.3",
   },
   {
     id: 10,
@@ -99,7 +128,10 @@ export const movies: Movie[] = [
     actor: "Prabhas",
     actress: "Anushka Shetty",
     image: "/assets/southindian/Baahubali_The_Beginning_poster.jpg",
-  },
+    desc: "The story of an ancient kingdom and the rise of two brothers, one of whom seeks to claim the throne, leading to a fierce battle for power.",
+    duration: "2h 39m",
+    imdbRating: "8.0",
+  },  
   {
     id: 11,
     title: "Crouching Tiger, Hidden Dragon",
@@ -108,6 +140,10 @@ export const movies: Movie[] = [
     actor: "Chow Yun-Fat",
     actress: "Michelle Yeoh",
     image: "/assets/hollywood/hiddendragon.jpg",
+    desc:" A skilled warrior and a noblewoman join forces to retrieve a stolen sword, while confronting their own hidden desires and past secrets.",
+    duration:"2 hours and 0 minutes.",
+    imdbRating:"7.9",
+
   },
   {
     id: 12,
@@ -117,6 +153,10 @@ export const movies: Movie[] = [
     actor: "Chris Evans",
     actress: "Scarlett Johansson",
     image: "/assets/hollywood/endgame.jpg",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 13,
@@ -126,6 +166,10 @@ export const movies: Movie[] = [
     actor: "Chris Pine",
     actress: "Gal Gadot",
     image: "/assets/hollywood/wonderwoman.jpg",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 14,
@@ -135,6 +179,10 @@ export const movies: Movie[] = [
     actor: "Bryan Cranston",
     actress: "Anna Gunn",
     image: "/assets/hollywood/breakingbad.jpg",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 15,
@@ -144,6 +192,10 @@ export const movies: Movie[] = [
     actor: "Yash",
     actress: "Srinidhi Shetty",
     image: "/assets/southindian/kgf2.jpg",
+    desc:""
+    ,
+    duration:"",
+    imdbRating:"",
   },
   {
     id: 16,
@@ -153,6 +205,10 @@ export const movies: Movie[] = [
     actor: "Yifei Liu",
     actress: "Gong Li",
     image: "/assets/hollywood/mulan.jpg",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 17,
@@ -162,6 +218,10 @@ export const movies: Movie[] = [
     actor: "Tom Holland",
     actress: "Zendaya",
     image: "/assets/hollywood/nowayhome.jpg",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 18,
@@ -171,6 +231,10 @@ export const movies: Movie[] = [
     actor: "Jason Momoa",
     actress: "Amber Heard",
     image: "/assets/hollywood/aquaman.webp",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 19,
@@ -180,6 +244,10 @@ export const movies: Movie[] = [
     actor: "Finn Wolfhard",
     actress: "Millie Bobby Brown",
     image: "/assets/hollywood/strangerthings.jpg",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 20,
@@ -189,6 +257,10 @@ export const movies: Movie[] = [
     actor: "Ajay Devgn",
     actress: "Shriya Saran",
     image: "/assets/bollywood/drishyam.webp",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 21,
@@ -198,6 +270,10 @@ export const movies: Movie[] = [
     actor: "Stephen Chow",
     actress: "Huang Shengyi",
     image: "/assets/hollywood/Kung Fu Hustle.jpg",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 22,
@@ -207,6 +283,10 @@ export const movies: Movie[] = [
     actor: "Chris Hemsworth",
     actress: "Tessa Thompson",
     image: "/assets/hollywood/thor.webp",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 23,
@@ -216,6 +296,10 @@ export const movies: Movie[] = [
     actor: "Ezra Miller",
     actress: "Sasha Calle",
     image: "/assets/hollywood/theflash.webp",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 24,
@@ -225,6 +309,10 @@ export const movies: Movie[] = [
     actor: "Henry Cavill",
     actress: "Anya Chalotra",
     image: "/assets/hollywood/The Witcher.jpg",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 25,
@@ -234,6 +322,10 @@ export const movies: Movie[] = [
     actor: "Aamir Khan",
     actress: "Kareena Kapoor",
     image: "/assets/bollywood/3idiots.jpg",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 26,
@@ -243,6 +335,10 @@ export const movies: Movie[] = [
     actor: "Aamir Khan",
     actress: "Gracy Singh",
     image: "/assets/bollywood/lagaan.jpg",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 27,
@@ -252,6 +348,10 @@ export const movies: Movie[] = [
     actor: "Shah Rukh Khan",
     actress: "Kajol",
     image: "/assets/bollywood/ddlj.jpg",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 28,
@@ -261,6 +361,10 @@ export const movies: Movie[] = [
     actor: "Yash",
     actress: "Srinidhi Shetty",
     image: "/assets/southindian/kgf1.jpg",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 29,
@@ -270,6 +374,10 @@ export const movies: Movie[] = [
     actor: "Robert Downey Jr.",
     actress: "Scarlett Johansson",
     image: "/assets/hollywood/infinitywar.webp",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 30,
@@ -279,6 +387,10 @@ export const movies: Movie[] = [
     actor: "Prabhas",
     actress: "Anushka Shetty",
     image: "/assets/southindian/baahubali2.webp",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 31,
@@ -288,6 +400,10 @@ export const movies: Movie[] = [
     actor: "Shah Rukh Khan",
     actress: "Deepika Padukone",
     image: "/assets/bollywood/chennaiexpress.jpg",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 32,
@@ -297,6 +413,10 @@ export const movies: Movie[] = [
     actor: "Chadwick Boseman",
     actress: "Lupita Nyong'o",
     image: "/assets/hollywood/blackpanther.jpg",
+    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 33,
@@ -305,7 +425,10 @@ export const movies: Movie[] = [
     genre: "Biography",
     actor: "Aamir Khan",
     actress: "Fatima Sana Shaikh",
-    image: "/assets/bollywood/dangal.jpg",
+    image: "/assets/bollywood/dangal.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 34,
@@ -314,7 +437,10 @@ export const movies: Movie[] = [
     genre: "Action",
     actor: "Vin Diesel",
     actress: "Michelle Rodriguez",
-    image: "/assets/hollywood/fast7.jpg",
+    image: "/assets/hollywood/fast7.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 35,
@@ -323,7 +449,10 @@ export const movies: Movie[] = [
     genre: "Thriller",
     actor: "Vicky Kaushal",
     actress: "Alia Bhatt",
-    image: "/assets/bollywood/raazi.jpg",
+    image: "/assets/bollywood/raazi.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 36,
@@ -332,7 +461,10 @@ export const movies: Movie[] = [
     genre: "Sci-Fi",
     actor: "Chris Hemsworth",
     actress: "Scarlett Johansson",
-    image: "/assets/hollywood/theavengers.jpg",
+    image: "/assets/hollywood/theavengers.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 37,
@@ -341,7 +473,10 @@ export const movies: Movie[] = [
     genre: "Horror",
     actor: "Sohum Shah",
     actress: "Anita Date",
-    image: "/assets/hollywood/tumbbad.jpeg",
+    image: "/assets/hollywood/tumbbad.jpeg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 38,
@@ -350,7 +485,10 @@ export const movies: Movie[] = [
     genre: "Animation",
     actor: "Idina Menzel",
     actress: "Kristen Bell",
-    image: "/assets/hollywood/frozen.jpg",
+    image: "/assets/hollywood/frozen.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 39,
@@ -359,7 +497,10 @@ export const movies: Movie[] = [
     genre: "Romance",
     actor: "Shahid Kapoor",
     actress: "Kiara Advani",
-    image: "/assets/bollywood/kabirsingh.webp",
+    image: "/assets/bollywood/kabirsingh.webp",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 40,
@@ -368,7 +509,10 @@ export const movies: Movie[] = [
     genre: "Drama",
     actor: "Joaquin Phoenix",
     actress: "Zazie Beetz",
-    image: "/assets/bollywood/joker.jpg",
+    image: "/assets/bollywood/joker.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 41,
@@ -377,7 +521,10 @@ export const movies: Movie[] = [
     genre: "Action",
     actor: "Salman Khan",
     actress: "Katrina Kaif",
-    image: "/assets/bollywood/tigerzindahai.jpg",
+    image: "/assets/bollywood/tigerzindahai.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 42,
@@ -386,7 +533,10 @@ export const movies: Movie[] = [
     genre: "Sci-Fi",
     actor: "Matthew McConaughey",
     actress: "Anne Hathaway",
-    image: "/assets/hollywood/interstellar.jpg",
+    image: "/assets/hollywood/interstellar.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 43,
@@ -395,7 +545,10 @@ export const movies: Movie[] = [
     genre: "Adventure",
     actor: "Hrithik Roshan",
     actress: "Katrina Kaif",
-    image: "/assets/bollywood/znmd.jpg",
+    image: "/assets/bollywood/znmd.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 44,
@@ -404,7 +557,10 @@ export const movies: Movie[] = [
     genre: "Action",
     actor: "Amitabh Bachchan",
     actress: "Hema Malini",
-    image: "/assets/bollywood/sholay.jpg",
+    image: "/assets/bollywood/sholay.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 45,
@@ -413,7 +569,10 @@ export const movies: Movie[] = [
     genre: "Sci-Fi",
     actor: "Leonardo DiCaprio",
     actress: "Marion Cotillard",
-    image: "/assets/hollywood/inception.jpg",
+    image: "/assets/hollywood/inception.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 46,
@@ -422,7 +581,10 @@ export const movies: Movie[] = [
     genre: "Action",
     actor: "Hrithik Roshan",
     actress: "Vaani Kapoor",
-    image: "/assets/bollywood/war.jpg",
+    image: "/assets/bollywood/war.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 47,
@@ -431,7 +593,10 @@ export const movies: Movie[] = [
     genre: "Comedy",
     actor: "Ryan Reynolds",
     actress: "Morena Baccarin",
-    image: "/assets/hollywood/deadpool.jpg",
+    image: "/assets/hollywood/deadpool.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 48,
@@ -440,7 +605,10 @@ export const movies: Movie[] = [
     genre: "Drama",
     actor: "Aamir Khan",
     actress: "Preity Zinta",
-    image: "/assets/bollywood/dilchahtahai.jpeg",
+    image: "/assets/bollywood/dilchahtahai.jpeg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 49,
@@ -449,7 +617,10 @@ export const movies: Movie[] = [
     genre: "Action",
     actor: "Tom Hardy",
     actress: "Charlize Theron",
-    image: "/assets/hollywood/madmax.jpeg",
+    image: "/assets/hollywood/madmax.jpeg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 50,
@@ -458,7 +629,10 @@ export const movies: Movie[] = [
     genre: "Romance",
     actor: "Shah Rukh Khan",
     actress: "Katrina Kaif",
-    image: "/assets/bollywood/jabtakhaijaan.jpg",
+    image: "/assets/bollywood/jabtakhaijaan.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },{
     id: 51,
     title: "Sasura Bada Paisawala",
@@ -466,7 +640,10 @@ export const movies: Movie[] = [
     genre: "Drama",
     actor: "Manoj Tiwari",
     actress: "Rani Chatterjee",
-    image: "/assets/bhojpuri/sasurabadapaisawala.jpg",
+    image: "/assets/bhojpuri/sasurabadapaisawala.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 52,
@@ -475,7 +652,10 @@ export const movies: Movie[] = [
     genre: "Action",
     actor: "Dinesh Lal Yadav",
     actress: "Pakhi Hegde",
-    image: "/assets/bhojpuri/nirahuarikshawwala.webp",
+    image: "/assets/bhojpuri/nirahuarikshawwala.webp",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 53,
@@ -484,7 +664,10 @@ export const movies: Movie[] = [
     genre: "Family Drama",
     actor: "Manoj Tiwari",
     actress: "Nagma",
-    image: "/assets/bhojpuri/ganga.jpg",
+    image: "/assets/bhojpuri/ganga.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 54,
@@ -493,7 +676,10 @@ export const movies: Movie[] = [
     genre: "Romance",
     actor: "Dinesh Lal Yadav",
     actress: "Rambha",
-    image: "/assets/bhojpuri/nirahuairickshawala2.jpg",
+    image: "/assets/bhojpuri/nirahuairickshawala2.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 55,
@@ -502,7 +688,10 @@ export const movies: Movie[] = [
     genre: "Romantic Drama",
     actor: "Ravikishan",
     actress: "Monalisha",
-    image: "/assets/bhojpuri/devrabadasatevela.webp",
+    image: "/assets/bhojpuri/devrabadasatevela.webp",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 56,
@@ -511,7 +700,10 @@ export const movies: Movie[] = [
     genre: "Comedy",
     actor: "Manoj Tiger",
     actress: "Monalisa",
-    image: "/assets/bhojpuri/laagalrahabatasha.jpg",
+    image: "/assets/bhojpuri/laagalrahabatasha.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 57,
@@ -520,7 +712,10 @@ export const movies: Movie[] = [
     genre: "Patriotic",
     actor: "Dinesh Lal Yadav",
     actress: "Amrapali Dubey",
-    image: "/assets/bhojpuri/sherhindustan.jpg",
+    image: "/assets/bhojpuri/sherhindustan.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 58,
@@ -529,7 +724,10 @@ export const movies: Movie[] = [
     genre: "Comedy Drama",
     actor: "Khesari Lal Yadav",
     actress: "Amrapali Dubey",
-    image: "/assets/bhojpuri/rajababu.jpg",
+    image: "/assets/bhojpuri/rajababu.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 59,
@@ -538,7 +736,10 @@ export const movies: Movie[] = [
     genre: "Drama",
     actor: "Ravi Kishan",
     actress: "Rani Chatterjee",
-    image: "/assets/bhojpuri/mairekarbidaai.jpg",
+    image: "/assets/bhojpuri/mairekarbidaai.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 60,
@@ -547,7 +748,10 @@ export const movies: Movie[] = [
     genre: "Romance",
     actor: "Khesari Lal Yadav",
     actress: "Kajal Raghwani",
-    image: "/assets/bhojpuri/dulhangangaparke.jpg",
+    image: "/assets/bhojpuri/dulhangangaparke.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 61,
@@ -556,7 +760,10 @@ export const movies: Movie[] = [
     genre: "Romance",
     actor: "Jamie Dornan",
     actress: "Dakota Johnson",
-    image: "/assets/hollywood/fiftyshadesofgrey.jpg",
+    image: "/assets/hollywood/fiftyshadesofgrey.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 62,
@@ -565,7 +772,10 @@ export const movies: Movie[] = [
     genre: "Romance",
     actor: "Michele Morrone",
     actress: "Anna-Maria Sieklucka",
-    image: "/assets/hollywood/365days.jpg",
+    image: "/assets/hollywood/365days.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 63,
@@ -574,7 +784,10 @@ export const movies: Movie[] = [
     genre: "Thriller",
     actor: "Michael Douglas",
     actress: "Sharon Stone",
-    image: "/assets/hollywood/basicinstinct.jpg",
+    image: "/assets/hollywood/basicinstinct.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 64,
@@ -583,7 +796,10 @@ export const movies: Movie[] = [
     genre: "Drama",
     actor: "Léa Seydoux",
     actress: "Adèle Exarchopoulos",
-    image: "/assets/hollywood/bluewarmestcolor.jpg",
+    image: "/assets/hollywood/bluewarmestcolor.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 65,
@@ -592,7 +808,10 @@ export const movies: Movie[] = [
     genre: "Drama",
     actor: "Leonardo DiCaprio",
     actress: "Margot Robbie",
-    image: "/assets/hollywood/wolfofwallstreet.jpeg",
+    image: "/assets/hollywood/wolfofwallstreet.jpeg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 66,
@@ -601,7 +820,10 @@ export const movies: Movie[] = [
     genre: "Romance",
     actor: "John Abraham",
     actress: "Bipasha Basu",
-    image: "/assets/bollywood/jism.jpg",
+    image: "/assets/bollywood/jism.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 67,
@@ -610,7 +832,10 @@ export const movies: Movie[] = [
     genre: "Thriller",
     actor: "Emraan Hashmi",
     actress: "Mallika Sherawat",
-    image: "/assets/bollywood/murder.jpg",
+    image: "/assets/bollywood/murder.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 68,
@@ -619,7 +844,10 @@ export const movies: Movie[] = [
     genre: "Thriller",
     actor: "Gulshan Devaiah",
     actress: "Paoli Dam",
-    image: "/assets/bollywood/hatestory.jpg",
+    image: "/assets/bollywood/hatestory.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 69,
@@ -628,7 +856,10 @@ export const movies: Movie[] = [
     genre: "Horror",
     actor: "Dino Morea",
     actress: "Bipasha Basu",
-    image: "/assets/bollywood/raaz.jpeg",
+    image: "/assets/bollywood/raaz.jpeg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 70,
@@ -637,7 +868,10 @@ export const movies: Movie[] = [
     genre: "Horror",
     actor: "Rajkummar Rao",
     actress: "Kainaz Motivala",
-    image: "/assets/bollywood/raginimms.jpg",
+    image: "/assets/bollywood/raginimms.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 71,
@@ -646,7 +880,10 @@ export const movies: Movie[] = [
     genre: "Mystery",
     actor: "Tom Cruise",
     actress: "Nicole Kidman",
-    image: "/assets/hollywood/eyeswideshut.jpg",
+    image: "/assets/hollywood/eyeswideshut.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 72,
@@ -655,7 +892,10 @@ export const movies: Movie[] = [
     genre: "Drama",
     actor: "Michael Pitt",
     actress: "Eva Green",
-    image: "/assets/hollywood/thedreamers.jpg",
+    image: "/assets/hollywood/thedreamers.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 73,
@@ -664,7 +904,10 @@ export const movies: Movie[] = [
     genre: "Thriller",
     actor: "Brad Pitt",
     actress: "Juliette Lewis",
-    image: "/assets/hollywood/kalifornia.jpg",
+    image: "/assets/hollywood/kalifornia.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 74,
@@ -673,7 +916,10 @@ export const movies: Movie[] = [
     genre: "Drama",
     actor: "Anshuman Jha",
     actress: "Nushrratt Bharuccha",
-    image: "/assets/bollywood/lsd.jpg",
+    image: "/assets/bollywood/lsd.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 75,
@@ -682,7 +928,10 @@ export const movies: Movie[] = [
     genre: "Drama",
     actor: "Shadab Kamal",
     actress: "Shilpa Shukla",
-    image: "/assets/bollywood/bapass.jpg",
+    image: "/assets/bollywood/bapass.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 76,
@@ -691,7 +940,10 @@ export const movies: Movie[] = [
     genre: "Mystery",
     actor: "Ha Jung-woo",
     actress: "Kim Min-hee",
-    image: "/assets/hollywood/thehandmaiden.webp",
+    image: "/assets/hollywood/thehandmaiden.webp",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 77,
@@ -700,7 +952,10 @@ export const movies: Movie[] = [
     genre: "Romance",
     actor: "Joseph Gordon-Levitt",
     actress: "Scarlett Johansson",
-    image: "/assets/hollywood/donjon.jpeg",
+    image: "/assets/hollywood/donjon.jpeg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 78,
@@ -709,7 +964,10 @@ export const movies: Movie[] = [
     genre: "Drama",
     actor: "Raj Babbar",
     actress: "Dimple Kapadia",
-    image: "/assets/bollywood/zakhmiaurat.jpg",
+    image: "/assets/bollywood/zakhmiaurat.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 79,
@@ -718,7 +976,10 @@ export const movies: Movie[] = [
     genre: "Romance",
     actor: "Ramon Tikaram",
     actress: "Indira Varma",
-    image: "/assets/bollywood/kamasutra.jpg",
+    image: "/assets/bollywood/kamasutra.jpg",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   },
   {
     id: 80,
@@ -727,7 +988,10 @@ export const movies: Movie[] = [
     genre: "Romance",
     actor: "Ramon Tikaram",
     actress: "Rekha",
-    image: "/assets/hollywood/taleoflove.avif",
+    image: "/assets/hollywood/taleoflove.avif",    desc:"",
+    duration:"",
+    imdbRating:"",
+
   }
 
 ];

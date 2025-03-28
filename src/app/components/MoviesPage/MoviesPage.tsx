@@ -2,10 +2,12 @@
 import { movies } from "@/app/data/movies";
 import { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const MoviesPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [visibleCount, setVisibleCount] = useState<number>(10); // Number of movies to show initially
+  const router = useRouter();
 
   // Filter movies based on the search query
   const filteredMovies = movies.filter((movie) =>
@@ -18,6 +20,11 @@ const MoviesPage: React.FC = () => {
   // Handle showing more movies
   const showMoreMovies = () => {
     setVisibleCount((prevCount) => prevCount + 10);
+  };
+
+  // Handle movie card click
+  const handleMovieClick = (movieId: number) => {
+    router.push(`/movies/${movieId}`);
   };
 
   return (
@@ -46,7 +53,8 @@ const MoviesPage: React.FC = () => {
           filteredMovies.slice(0, visibleCount).map((movie) => (
             <div
               key={movie.id}
-              className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              onClick={() => handleMovieClick(movie.id)}
+              className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
             >
               {/* Movie Image */}
               <Image
@@ -70,17 +78,6 @@ const MoviesPage: React.FC = () => {
                 <p className="text-xs text-gray-300 mb-1">
                   Starring: {movie.actor} & {movie.actress}
                 </p>
-
-                {/* Action Buttons */}
-                <div className="flex justify-between items-center mt-4">
-                  <button className="w-[48%] cursor-pointer text-nowrap py-2 bg-yellow-500 text-black rounded-lg shadow-md hover:bg-yellow-600 transition-all">
-                    Watch Now
-                  </button>
-
-                  <button className="w-[48%] cursor-pointer py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition-all">
-                    Download
-                  </button>
-                </div>
               </div>
             </div>
           ))

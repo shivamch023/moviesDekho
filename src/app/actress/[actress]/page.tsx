@@ -16,6 +16,9 @@ const ActressMoviesPage: React.FC = () => {
   const filteredMovies: Movie[] = movies.filter(
     (movie) => movie.actress.toLowerCase() === decodedactress.toLowerCase()
   );
+  const handleMovieClick = (movieId: number) => {
+    router.push(`/movies/${movieId}`);
+  };
 
   return (
     <div className="p-4 bg-black min-h-screen mt-[4rem] relative">
@@ -39,7 +42,8 @@ const ActressMoviesPage: React.FC = () => {
           filteredMovies.map((movie) => (
             <div
               key={movie.id}
-              className="bg-gray-900 border rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-yellow-300"
+              onClick={() => handleMovieClick(movie.id)}
+              className="bg-gray-900 border cursor-pointer rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-yellow-300"
             >
               <Image
                 src={movie.image}
@@ -52,22 +56,14 @@ const ActressMoviesPage: React.FC = () => {
                 <h2 className="text-lg font-semibold mb-1 text-center">
                   {movie.title}
                 </h2>
-                <p className="text-sm text-gray-300">Category: {movie.category}</p>
+                <p className="text-sm text-gray-300">
+                  Category: {movie.category}
+                </p>
                 <p className="text-sm text-gray-300">Genre: {movie.genre}</p>
                 <p className="text-xs text-gray-400 mt-2">
                   Starring: {movie.actor} & {movie.actress}
                 </p>
-                <div className="flex justify-between items-center mt-4">
-                  <button className="w-[48%] cursor-pointer text-nowrap py-2 bg-yellow-500 text-black rounded-lg shadow-md hover:bg-yellow-600 transition-all">
-                    Watch Now
-                  </button>
-
-                  <button className="w-[48%] cursor-pointer py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition-all">
-                    Download
-                  </button>
-                </div>
               </div>
-             
             </div>
           ))
         ) : (

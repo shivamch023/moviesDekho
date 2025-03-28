@@ -22,6 +22,11 @@ const CategoryMoviesPage: React.FC = () => {
     new Set(filteredMovies.map((movie) => movie.genre))
   ); // Extract unique genres
 
+  // Handle movie card click
+  const handleMovieClick = (movieId: number) => {
+    router.push(`/movies/${movieId}`);
+  };
+
   const [selectedGenre, setSelectedGenre] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState<string>("");
 
@@ -106,7 +111,8 @@ const CategoryMoviesPage: React.FC = () => {
           displayedMovies.map((movie) => (
             <div
               key={movie.id}
-              className="bg-gray-900 border rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-yellow-300"
+              onClick={() => handleMovieClick(movie.id)}
+              className="bg-gray-900 border rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-yellow-300 cursor-pointer"
             >
               {/* Movie Image */}
               <Image
@@ -128,15 +134,6 @@ const CategoryMoviesPage: React.FC = () => {
                 <p className="text-xs text-gray-400 mt-2">
                   Starring: {movie.actor} & {movie.actress}
                 </p>
-                <div className="flex justify-between items-center mt-4">
-                  <button className="w-[48%] cursor-pointer text-nowrap py-2 bg-yellow-500 text-black rounded-lg shadow-md hover:bg-yellow-600 transition-all">
-                    Watch Now
-                  </button>
-
-                  <button className="w-[48%] cursor-pointer py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition-all">
-                    Download
-                  </button>
-                </div>
               </div>
             </div>
           ))
