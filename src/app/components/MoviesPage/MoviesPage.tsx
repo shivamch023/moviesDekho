@@ -29,8 +29,9 @@ const MoviesPage: React.FC = () => {
 
   return (
     <div className="p-4 mt-[4rem] bg-black min-h-screen">
-      <h1 className="text-3xl p-2 font-bold mb-6 text-center text-white">
+      <h1 className="text-3xl font-bold mb-6 text-center text-white relative">
         All Movies
+        <span className="absolute top-10 left-1/2 transform -translate-x-1/2 h-1 w-25 bg-yellow-300"></span>
       </h1>
 
       {/* Search Bar */}
@@ -70,13 +71,15 @@ const MoviesPage: React.FC = () => {
                   {movie.title}
                 </h2>
                 <p className="text-sm text-gray-300 mb-1">
-                  Category: {movie.category}
+                  <span className="text-white">Category :</span>{" "}
+                  {movie.category}
                 </p>
                 <p className="text-sm text-gray-300 mb-1">
-                  Genre: {movie.genre}
+                  <span className="text-white">Genre :</span> {movie.genre}
                 </p>
                 <p className="text-xs text-gray-300 mb-1">
-                  Starring: {movie.actor} & {movie.actress}
+                  <span className="text-white">Starring :</span> {movie.actor} &{" "}
+                  {movie.actress}
                 </p>
               </div>
             </div>

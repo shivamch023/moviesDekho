@@ -10,11 +10,12 @@ const CategoriesPage: React.FC = () => {
 
   return (
     <div className="p-4 mt-[5rem] h-[50vh] ">
-      <h1 className="text-3xl font-bold mb-6 text-center text-yellow-300">
+      <h1 className="text-3xl font-bold mb-6 text-center text-white relative">
         Movie Categories
+        <span className="absolute top-10 left-1/2 transform -translate-x-1/2 h-1 w-25 bg-yellow-300"></span>
       </h1>
 
-      <div className="flex flex-wrap gap-4 justify-center">
+      <div className="flex flex-wrap gap-4 justify-center mt-[1rem]">
         {categories.map((category) => (
           <button
             key={category}

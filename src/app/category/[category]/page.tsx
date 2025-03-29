@@ -128,11 +128,15 @@ const CategoryMoviesPage: React.FC = () => {
                   {movie.title}
                 </h2>
                 <p className="text-sm text-gray-300">
-                  Category: {movie.category}
+                  <span className="text-white">Category :</span>{" "}
+                  {movie.category}
                 </p>
-                <p className="text-sm text-gray-300">Genre: {movie.genre}</p>
-                <p className="text-xs text-gray-400 mt-2">
-                  Starring: {movie.actor} & {movie.actress}
+                <p className="text-sm text-gray-300">
+                  <span className="text-white">Genre :</span> {movie.genre}
+                </p>
+                <p className="text-xs text-gray-400 mt-1.4">
+                  <span className="text-white">Starring :</span> {movie.actor} &{" "}
+                  {movie.actress}
                 </p>
               </div>
             </div>

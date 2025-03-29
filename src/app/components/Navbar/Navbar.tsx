@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black text-yellow-500 z-50">
+    <nav className="fixed top-0 left-0 w-full bg-[#0D1422] text-yellow-500 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Hamburger Menu (Mobile) */}
@@ -82,6 +82,9 @@ const Navbar: React.FC = () => {
             <Link href="/categories" className="hover:text-yellow-300">
               Movie Categories
             </Link>
+            <Link href="/watchlist" className="hover:text-yellow-300">
+              Watch List
+            </Link>
             <Link href="/actoractresspage" className="hover:text-yellow-300">
               Actor & Actress
             </Link>
@@ -100,7 +103,7 @@ const Navbar: React.FC = () => {
             onClick={() => setIsOpen(false)}
           />
           <motion.div
-            className="fixed left-0 top-0 h-full w-64 bg-black text-yellow-500 shadow-lg z-50"
+            className="fixed left-0 top-0 h-full w-64 bg-[#0D1422] text-yellow-500 shadow-lg z-50"
             initial="closed"
             animate={isOpen ? "open" : "closed"}
             variants={drawerVariants}
@@ -130,7 +133,7 @@ const Navbar: React.FC = () => {
               </button>
             </div>
             <div className="bg-yellow-300 w-full h-0.5"></div>
-            <div className="space-y-2.5 px-4  mt-[2rem]">
+            <div className=" px-4  mt-[2rem] flex flex-col items-start  gap-2">
               <Link
                 onClick={() => setIsOpen(false)}
                 href="/categories"
@@ -144,6 +147,13 @@ const Navbar: React.FC = () => {
                 className="block hover:text-yellow-300"
               >
                 Movie Categories
+              </Link>
+              <Link
+                href="/watchlist"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-yellow-300"
+              >
+                Watch List
               </Link>
               <Link
                 onClick={() => setIsOpen(false)}
