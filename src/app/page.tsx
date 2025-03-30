@@ -4,7 +4,7 @@ import TopRatedMovies from "./components/TopImdbMovie/TopImdbMovie";
 
 const page = () => {
   return (
-    <div className="p-1">
+    <div className="p-1 bg-black">
       <MoviesPage />
       <TopRatedMovies />
     </div>

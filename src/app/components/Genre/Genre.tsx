@@ -1,37 +1,35 @@
 "use client";
 import { movies } from "@/app/data/movies";
 import { useRouter } from "next/navigation";
-import GenresPage from "../components/Genre/Genre";
 
-const CategoriesPage: React.FC = () => {
+const GenresPage: React.FC = () => {
   const router = useRouter();
 
-  // Extract unique categories
-  const categories = Array.from(new Set(movies.map((movie) => movie.category)));
+  // Extract unique genres
+  const genres = Array.from(new Set(movies.map((movie) => movie.genre)));
 
   return (
-    <div className="p-4 mt-[5rem]  ">
+    <div className="p-4 mt-[5rem] h-[50vh]">
       <h1 className="text-3xl font-bold mb-6 text-center text-white relative">
-        Movie Categories
+        Movie Genres
         <span className="absolute top-10 left-1/2 transform -translate-x-1/2 h-1 w-25 bg-yellow-300"></span>
       </h1>
 
       <div className="flex flex-wrap gap-4 justify-center mt-[1rem]">
-        {categories.map((category) => (
+        {genres.map((genre) => (
           <button
-            key={category}
+            key={genre}
             className="px-4 py-2 bg-yellow-500 text-black rounded-lg shadow-md hover:bg-yellow-600 cursor-pointer"
             onClick={() =>
-              router.push(`/category/${encodeURIComponent(category)}`)
+              router.push(`/genre/${encodeURIComponent(genre)}`)
             }
           >
-            {category}
+            {genre}
           </button>
         ))}
       </div>
-      <GenresPage />
     </div>
   );
 };
 
-export default CategoriesPage;
+export default GenresPage;

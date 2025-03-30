@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 
 const MoviesPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
-  const [visibleCount, setVisibleCount] = useState<number>(10); // Number of movies to show initially
+  const [visibleCount, setVisibleCount] = useState<number>(5); // Number of movies to show initially
   const router = useRouter();
 
   // Filter movies based on the search query
@@ -19,7 +19,7 @@ const MoviesPage: React.FC = () => {
 
   // Handle showing more movies
   const showMoreMovies = () => {
-    setVisibleCount((prevCount) => prevCount + 10);
+    setVisibleCount((prevCount) => prevCount + 5);
   };
 
   // Handle movie card click
@@ -94,7 +94,7 @@ const MoviesPage: React.FC = () => {
         <div className="flex justify-center mt-6">
           <button
             onClick={showMoreMovies}
-            className="p-3 bg-yellow-500 text-black rounded-lg shadow-md hover:bg-yellow-600 cursor-pointer"
+            className="px-4 py-2 bg-yellow-500 font-bold text-black rounded-lg shadow-md hover:bg-yellow-600 cursor-pointer"
           >
             Show More
           </button>

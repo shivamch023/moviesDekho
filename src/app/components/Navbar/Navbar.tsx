@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
 
           {/* Logo */}
           <div className="flex-shrink-0 text-center flex-1 md:flex-none">
-            <Link href="/" className="text-xl font-bold">
+            <Link href="/" className="text-2xl font-bold">
               MovieDekho
             </Link>
           </div>
@@ -72,23 +72,26 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-4">
-            <Link href="/new" className="hover:text-yellow-300">
+          <div className="hidden md:flex space-x-6">
+            <Link href="/new" className="hover:text-yellow-300 text-xl">
               New
             </Link>
-            <Link href="/trending" className="hover:text-yellow-300">
+            <Link href="/trending" className="hover:text-yellow-300 text-xl">
               Trending
             </Link>
-            <Link href="/categories" className="hover:text-yellow-300">
-              Movie Categories
+            <Link href="/categories" className="hover:text-yellow-300 text-xl ">
+              Movie Categories & Genre
             </Link>
-            <Link href="/watchlist" className="hover:text-yellow-300">
+            <Link href="/watchlist" className="hover:text-yellow-300 text-xl">
               Watch List
             </Link>
-            <Link href="/actoractresspage" className="hover:text-yellow-300">
+            <Link
+              href="/actoractresspage"
+              className="hover:text-yellow-300 text-xl"
+            >
               Actor & Actress
             </Link>
-            <Link href="/login" className="hover:text-yellow-300">
+            <Link href="/login" className="hover:text-yellow-300 text-xl">
               Login
             </Link>
           </div>
@@ -144,9 +147,9 @@ const Navbar: React.FC = () => {
               <Link
                 onClick={() => setIsOpen(false)}
                 href="/categories"
-                className="block hover:text-yellow-300"
+                className="block hover:text-yellow-300 "
               >
-                Movie Categories
+                Movie Categories & Genre
               </Link>
               <Link
                 href="/watchlist"
