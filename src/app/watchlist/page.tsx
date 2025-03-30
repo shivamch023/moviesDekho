@@ -48,7 +48,7 @@ const WatchlistPage: React.FC = () => {
 
   if (watchlistedMovies.length === 0) {
     return (
-      <div className="p-8 text-center text-white bg-black min-h-screen">
+      <div className="p-8 text-center text-white bg-black min-h-screen flex items-center justify-center flex-col">
         <h1 className="text-2xl font-bold">No Watchlisted Movies</h1>
         <p className="text-gray-300">
           You have not added any movies to your watchlist.

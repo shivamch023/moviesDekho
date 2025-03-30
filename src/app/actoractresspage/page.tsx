@@ -11,14 +11,30 @@ const ActorsAndActressesPage: React.FC = () => {
   const actresses = Array.from(new Set(movies.map((movie) => movie.actress)));
 
   const [searchTerm, setSearchTerm] = useState<string>("");
+  const [selectedLetter, setSelectedLetter] = useState<string | null>("All");
 
-  // Filter actors and actresses based on the search term
-  const filteredActors = actors.filter((actor) =>
-    actor.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-  const filteredActresses = actresses.filter((actress) =>
-    actress.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // Filter actors and actresses based on the search term or selected letter
+  const filteredActors = actors.filter((actor) => {
+    const lowerActor = actor.toLowerCase();
+    if (selectedLetter && selectedLetter !== "All") {
+      return lowerActor.startsWith(selectedLetter.toLowerCase());
+    }
+    return lowerActor.includes(searchTerm.toLowerCase());
+  });
+
+  const filteredActresses = actresses.filter((actress) => {
+    const lowerActress = actress.toLowerCase();
+    if (selectedLetter && selectedLetter !== "All") {
+      return lowerActress.startsWith(selectedLetter.toLowerCase());
+    }
+    return lowerActress.includes(searchTerm.toLowerCase());
+  });
+
+  // Generate alphabet array (A-Z) and prepend "All"
+  const alphabet = [
+    "All",
+    ...Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i)),
+  ];
 
   return (
     <div className="p-4 mt-[5rem]">
@@ -28,16 +44,40 @@ const ActorsAndActressesPage: React.FC = () => {
       </h1>
 
       {/* Search Bar */}
-      <div className="flex justify-center mb-8">
+      <div className="flex justify-center mb-4">
         <input
           type="text"
-          placeholder="Search for an Hollywood or bollywood , actor or actress"
+          placeholder="Search for an actor or actress"
           className="w-full max-w-md px-4 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          onChange={(e) => {
+            setSearchTerm(e.target.value);
+            setSelectedLetter("All"); // Reset to "All" on search
+          }}
         />
       </div>
 
+      {/* Alphabet Filter */}
+      <div className="flex flex-wrap justify-center gap-2 mb-6">
+        {alphabet.map((letter) => (
+          <button
+            key={letter}
+            className={`px-3 py-1 rounded-lg shadow-md ${
+              selectedLetter === letter
+                ? "bg-yellow-500 text-white"
+                : "bg-gray-700 text-gray-300 cursor-pointer hover:bg-yellow-300 hover:text-black"
+            }`}
+            onClick={() => {
+              setSelectedLetter(letter);
+              setSearchTerm(""); // Reset search term when letter is selected
+            }}
+          >
+            {letter}
+          </button>
+        ))}
+      </div>
+
+      {/* Actors Section */}
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-4 text-center text-blue-400">
           Actors
@@ -57,12 +97,13 @@ const ActorsAndActressesPage: React.FC = () => {
             ))
           ) : (
             <p className="text-center text-gray-500 w-full">
-              No actors found matching your search.
+              No actors found for the selected filter.
             </p>
           )}
         </div>
       </div>
 
+      {/* Actresses Section */}
       <div>
         <h2 className="text-2xl font-semibold mb-4 text-center text-pink-400">
           Actresses
@@ -82,7 +123,7 @@ const ActorsAndActressesPage: React.FC = () => {
             ))
           ) : (
             <p className="text-center text-gray-500 w-full">
-              No actresses found matching your search.
+              No actresses found for the selected filter.
             </p>
           )}
         </div>

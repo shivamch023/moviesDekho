@@ -3,12 +3,7 @@
 import { useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
-import {
-  FaDownload,
-  FaEye,
-  FaThumbsDown,
-  FaThumbsUp,
-} from "react-icons/fa";
+import { FaDownload, FaEye, FaThumbsDown, FaThumbsUp } from "react-icons/fa";
 import { movies } from "@/app/data/movies";
 
 const MovieDetailsPage: React.FC = () => {
@@ -152,7 +147,7 @@ const MovieDetailsPage: React.FC = () => {
                   : "bg-green-500 hover:bg-green-600"
               }`}
             >
-              <FaThumbsUp /> Like ({likes})
+              <FaThumbsUp /> ({likes})
             </button>
             <button
               onClick={handleDislike}
@@ -162,7 +157,7 @@ const MovieDetailsPage: React.FC = () => {
                   : "bg-red-500 hover:bg-red-600"
               }`}
             >
-              <FaThumbsDown /> Dislike ({dislikes})
+              <FaThumbsDown /> ({dislikes})
             </button>
           </div>
           <div className="flex flex-wrap gap-4 mt-4">
@@ -183,7 +178,6 @@ const MovieDetailsPage: React.FC = () => {
               {watchlist.includes(currentMovie.id)
                 ? "Remove from Watchlist -"
                 : "Add to Watchlist +"}{" "}
-            
             </button>
           </div>
         </div>
@@ -226,9 +220,11 @@ const MovieDetailsPage: React.FC = () => {
               </div>
             ))
           ) : (
-            <p className="text-center text-gray-300">
-              No related movies found.
-            </p>
+            <div className="flex justify-center items-center w-full min-h-[100px] bg-gray-900">
+              <p className="text-gray-300 text-center text-lg md:text-base sm:text-sm px-4 ">
+                No related movies found.
+              </p>
+            </div>
           )}
         </div>
         {relatedMovies.length > 5 && !showAllMovies && (

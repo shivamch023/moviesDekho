@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
               Trending
             </Link>
             <Link href="/categories" className="hover:text-yellow-300 text-xl ">
-              Movie Categories & Genre
+              Categories & Genre
             </Link>
             <Link href="/watchlist" className="hover:text-yellow-300 text-xl">
               Watch List
@@ -149,7 +149,7 @@ const Navbar: React.FC = () => {
                 href="/categories"
                 className="block hover:text-yellow-300 "
               >
-                Movie Categories & Genre
+               Categories & Genre
               </Link>
               <Link
                 href="/watchlist"
