@@ -1705,7 +1705,7 @@ export const movies: Movie[] = [
 {
   id: 129,
   title: "Fifty Shades Darker",
-  category: "Hollywood",
+  category: "Hollywood (18+)",
   genre: "Romance",
   actor: "Jamie Dornan",
   actress: "Dakota Johnson",
@@ -1718,7 +1718,7 @@ export const movies: Movie[] = [
 {
   id: 130,
   title: "Fifty Shades Freed",
-  category: "Hollywood",
+  category: "Hollywood (18+)",
   genre: "Romance",
   actor: "Jamie Dornan",
   actress: "Dakota Johnson",
