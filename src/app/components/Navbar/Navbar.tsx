@@ -139,7 +139,7 @@ const Navbar: React.FC = () => {
             <div className=" px-4  mt-[2rem] flex flex-col items-start  gap-2">
               <Link
                 onClick={() => setIsOpen(false)}
-                href="/categories"
+                href="/new"
                 className="block hover:text-yellow-300"
               >
                 New Movies
