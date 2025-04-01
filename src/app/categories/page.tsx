@@ -13,7 +13,7 @@ const CategoriesPage: React.FC = () => {
   }, {});
 
   return (
-    <div className="p-4 mt-[5rem]">
+    <div className="p-4 mt-[6rem]">
       <h1 className="text-3xl font-bold mb-6 text-center text-white relative">
         Movie Categories
         <span className="absolute top-10 left-1/2 transform -translate-x-1/2 h-1 w-25 bg-yellow-300"></span>

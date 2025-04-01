@@ -51,9 +51,9 @@ const GenreMoviesPage: React.FC = () => {
           );
 
   return (
-    <div className="p-4 bg-black min-h-screen mt-[4rem] relative">
+    <div className="p-4 bg-black min-h-screen mt-[6rem] relative">
       {/* Page Title */}
-      <h1 className="text-2xl font-bold mb-4 text-center text-white relative">
+      <h1 className="text-2xl md:text-4xl font-bold mb-4 text-center text-white relative">
         {decodedGenre} Movies
         <span className="absolute bottom-[-5px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-yellow-500"></span>
         <button

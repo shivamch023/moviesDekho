@@ -22,7 +22,7 @@ const ActorMoviesPage: React.FC = () => {
   };
 
   return (
-    <div className="p-4 bg-black min-h-screen mt-[5rem] relative">
+    <div className="p-4 bg-black min-h-screen mt-[6rem] relative">
       {/* Page Title */}
       <div className="relative flex items-center justify-between">
         <button
@@ -32,14 +32,14 @@ const ActorMoviesPage: React.FC = () => {
           <IoMdArrowRoundBack />
           Back
         </button>
-        <h1 className="text-2xl font-bold mb-4 text-center text-white relative w-full">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4 text-center text-white relative w-full">
           Movies Starring {decodedActor}
-          <span className="absolute bottom-[-5px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-yellow-500"></span>
+          <span className="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-yellow-500"></span>
         </h1>
       </div>
 
       {/* Movies Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-[3rem]">
         {filteredMovies.length > 0 ? (
           filteredMovies.map((movie) => (
             <div
@@ -61,11 +61,15 @@ const ActorMoviesPage: React.FC = () => {
                   {movie.title}
                 </h2>
                 <p className="text-sm text-gray-300">
-                <span className="text-white">Category :</span> {movie.category}
+                  <span className="text-white">Category :</span>{" "}
+                  {movie.category}
                 </p>
-                <p className="text-sm text-gray-300"><span className="text-white">Genre :</span> {movie.genre}</p>
+                <p className="text-sm text-gray-300">
+                  <span className="text-white">Genre :</span> {movie.genre}
+                </p>
                 <p className="text-xs text-gray-400 mt-2">
-                <span className="text-white">Staring :</span> {movie.actor} & {movie.actress}
+                  <span className="text-white">Staring :</span> {movie.actor} &{" "}
+                  {movie.actress}
                 </p>
               </div>
             </div>

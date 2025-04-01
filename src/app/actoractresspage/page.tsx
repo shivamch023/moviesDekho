@@ -37,7 +37,7 @@ const ActorsAndActressesPage: React.FC = () => {
   ];
 
   return (
-    <div className="p-4 mt-[5rem]">
+    <div className="p-4 mt-[6rem]">
       <h1 className="text-3xl font-bold mb-6 text-center text-white relative">
         Actors and Actresses
         <span className="absolute top-10 left-1/2 transform -translate-x-1/2 h-1 w-20 bg-yellow-300"></span>
@@ -78,7 +78,7 @@ const ActorsAndActressesPage: React.FC = () => {
       </div>
 
       {/* Actors Section */}
-      <div className="mb-8">
+      <div className="mb-5">
         <h2 className="text-4xl font-semibold mb-4 text-center text-white">
           Actors
         </h2>

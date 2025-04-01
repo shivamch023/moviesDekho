@@ -21,23 +21,24 @@ const ActressMoviesPage: React.FC = () => {
   };
 
   return (
-    <div className="p-4 bg-black min-h-screen mt-[5rem] relative">
+    <div className="p-4 bg-black min-h-screen mt-[6rem] relative">
       {/* Page Title */}
-      <h1 className="text-2xl font-bold mb-4 text-center text-white relative">
+      <h1 className="text-2xl md:text-4xl font-bold mb-4 text-center text-white relative">
         Movies Starring {decodedactress}
-        <span className="absolute bottom-[-5px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-yellow-500"></span>
+        <span className="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-yellow-500"></span>
         <button
           onClick={() => router.back()}
           className="flex absolute bottom-0 gap-2 px-4 py-2 items-center justify-center rounded-lg bg-gray-700 text-white hover:bg-yellow-500 hover:text-black cursor-pointer shadow-md text-[1rem]"
         >
           <h5 className="flex items-center justify-center gap-2">
             <IoMdArrowRoundBack />
+            Back
           </h5>
         </button>
       </h1>
 
       {/* Movies Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-[3rem]">
         {filteredMovies.length > 0 ? (
           filteredMovies.map((movie) => (
             <div
