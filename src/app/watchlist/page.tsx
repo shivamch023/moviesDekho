@@ -122,7 +122,7 @@ const WatchlistPage: React.FC = () => {
             <div className="text-center mt-6">
               <button
                 onClick={() => setShowAllRelated(!showAllRelated)}
-                className="bg-yellow-500 cursor-pointer text-black py-2 px-4 rounded-lg hover:bg-yellow-600 transition"
+                className="px-15 py-2 bg-gradient-to-r to-rose-500 from-yellow-500 text-white rounded-lg hover:from-rose-500 hover:to-yellow-600 cursor-pointer"
               >
                 {showAllRelated ? "View Less" : "View More"}
               </button>
