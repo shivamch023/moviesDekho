@@ -58,7 +58,7 @@ const WatchlistPage: React.FC = () => {
   }
 
   return (
-    <div className="p-4 bg-black min-h-screen mt-[4rem]">
+    <div className="p-4 bg-black min-h-screen mt-[6rem]">
       <h1 className="text-3xl font-bold mb-6 text-center text-white relative">
         Watch Listed Movies
         <span className="absolute top-10 left-1/2 transform -translate-x-1/2 h-1 w-25 bg-yellow-300"></span>
@@ -67,7 +67,7 @@ const WatchlistPage: React.FC = () => {
         {watchlistedMovies.map((movie) => (
           <div
             key={movie.id}
-            className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 hover:scale-104"
           >
             <Image
               src={movie.image}
@@ -99,7 +99,7 @@ const WatchlistPage: React.FC = () => {
             {moviesToDisplay.map((movie) => (
               <div
                 key={movie.id}
-                className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 hover:scale-104"
               >
                 <Image
                   src={movie.image}

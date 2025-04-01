@@ -21,7 +21,7 @@ const ActressMoviesPage: React.FC = () => {
   };
 
   return (
-    <div className="p-4 bg-black min-h-screen mt-[4rem] relative">
+    <div className="p-4 bg-black min-h-screen mt-[5rem] relative">
       {/* Page Title */}
       <h1 className="text-2xl font-bold mb-4 text-center text-white relative">
         Movies Starring {decodedactress}
@@ -43,7 +43,7 @@ const ActressMoviesPage: React.FC = () => {
             <div
               key={movie.id}
               onClick={() => handleMovieClick(movie.id)}
-              className="bg-gray-900 border cursor-pointer rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-yellow-300"
+              className="bg-gray-900 border cursor-pointer rounded-lg shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-104 text-yellow-300"
             >
               <Image
                 src={movie.image}

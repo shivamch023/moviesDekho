@@ -48,7 +48,7 @@ const ActorsAndActressesPage: React.FC = () => {
         <input
           type="text"
           placeholder="Search for an actor or actress"
-          className="w-full max-w-md px-4 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          className="w-full max-w-md px-4 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none  focus:ring-2 focus:ring-yellow-500"
           value={searchTerm}
           onChange={(e) => {
             setSearchTerm(e.target.value);
@@ -62,10 +62,10 @@ const ActorsAndActressesPage: React.FC = () => {
         {alphabet.map((letter) => (
           <button
             key={letter}
-            className={`px-3 py-1 rounded-lg shadow-md ${
+            className={`px-3 py-1 rounded-lg shadow-md transition-transform duration-300 hover:scale-108 ${
               selectedLetter === letter
                 ? "bg-yellow-500 text-white"
-                : "bg-gray-700 text-gray-300 cursor-pointer hover:bg-yellow-300 hover:text-black"
+                : "bg-gray-700 text-gray-300 cursor-pointer hover:bg-yellow-300 hover:text-black "
             }`}
             onClick={() => {
               setSelectedLetter(letter);
@@ -79,7 +79,7 @@ const ActorsAndActressesPage: React.FC = () => {
 
       {/* Actors Section */}
       <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4 text-center text-blue-400">
+        <h2 className="text-4xl font-semibold mb-4 text-center text-white">
           Actors
         </h2>
         <div className="flex flex-wrap gap-4 justify-center">
@@ -87,7 +87,7 @@ const ActorsAndActressesPage: React.FC = () => {
             filteredActors.map((actor) => (
               <button
                 key={actor}
-                className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 cursor-pointer"
+                className="px-4 py-2 bg-rose-500 text-white rounded-lg shadow-md hover:bg-rose-600 cursor-pointer transition-transform duration-300 hover:scale-106"
                 onClick={() =>
                   router.push(`/actor/${encodeURIComponent(actor)}`)
                 }
@@ -105,7 +105,7 @@ const ActorsAndActressesPage: React.FC = () => {
 
       {/* Actresses Section */}
       <div>
-        <h2 className="text-2xl font-semibold mb-4 text-center text-pink-400">
+        <h2 className="text-4xl font-semibold mb-4 text-center text-white">
           Actresses
         </h2>
         <div className="flex flex-wrap gap-4 justify-center">
@@ -113,7 +113,7 @@ const ActorsAndActressesPage: React.FC = () => {
             filteredActresses.map((actress) => (
               <button
                 key={actress}
-                className="px-4 py-2 bg-pink-500 text-white rounded-lg shadow-md hover:bg-pink-600 cursor-pointer"
+                className="px-4 py-2 bg-rose-500 text-white rounded-lg shadow-md hover:bg-rose-600 cursor-pointer transition-transform duration-300 hover:scale-106"
                 onClick={() =>
                   router.push(`/actress/${encodeURIComponent(actress)}`)
                 }

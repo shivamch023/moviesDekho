@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { FaFilm } from "react-icons/fa";
+import { IoPersonCircleSharp } from "react-icons/io5";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,14 +33,14 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[#0D1422] text-yellow-500 z-50">
+    <nav className="fixed top-0 left-0 w-full bg-[#0D1422] text-yellow-500 z-50 md:py-3 py-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Hamburger Menu (Mobile) */}
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(true)}
-              className="text-yellow-500 hover:text-yellow-300 focus:outline-none"
+              className="text-white  focus:outline-none text-4xl"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,42 +59,62 @@ const Navbar: React.FC = () => {
             </button>
           </div>
 
-          {/* Logo */}
-          <div className="flex-shrink-0 text-center flex-1 md:flex-none">
-            <Link href="/" className="text-2xl font-bold">
-              MovieDekho
+          <div className="text-center flex items-center justify-center space-x-2">
+            <FaFilm className="text-white text-4xl md:text-4xl" />
+            <Link
+              href="/"
+              className="text-xl md:text-3xl font-bold tracking-wide transition-transform duration-300 hover:scale-105"
+            >
+              <span className="text-white text-3xl md:text-4xl font-serif">
+                M
+              </span>
+              <span className="text-white text-xl md:text-2xl">ovie</span>
+              <span className="text-white text-3xl md:text-4xl font-serif">
+                D
+              </span>
+              <span className="text-white text-xl md:text-2xl">ekho.</span>
             </Link>
           </div>
-
           {/* Login Link (Mobile) */}
           <div className="md:hidden flex items-center">
-            <Link href="/login" className="hover:text-yellow-300">
-              Login
+            <Link href="/login" className="text-white font-semibold text-4xl">
+              <IoPersonCircleSharp />
             </Link>
           </div>
-
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6">
-            <Link href="/new" className="hover:text-yellow-300 text-xl">
+          <div className="hidden md:flex space-x-5">
+            <Link
+              href="/new"
+              className="hover:text-yellow-300 text-xl font-semibold"
+            >
               New
             </Link>
-            <Link href="/trending" className="hover:text-yellow-300 text-xl">
+            <Link
+              href="/trending"
+              className="hover:text-yellow-300 text-xl font-semibold"
+            >
               Trending
             </Link>
-            <Link href="/categories" className="hover:text-yellow-300 text-xl ">
+            <Link
+              href="/categories"
+              className="hover:text-yellow-300 text-xl font-semibold "
+            >
               Categories & Genre
             </Link>
-            <Link href="/watchlist" className="hover:text-yellow-300 text-xl">
+            <Link
+              href="/watchlist"
+              className="hover:text-yellow-300 text-xl font-semibold"
+            >
               Watch List
             </Link>
             <Link
               href="/actoractresspage"
-              className="hover:text-yellow-300 text-xl"
+              className="hover:text-yellow-300  text-xl font-semibold"
             >
               Actor & Actress
             </Link>
-            <Link href="/login" className="hover:text-yellow-300 text-xl">
-              Login
+            <Link href="/login" className="text-white text-4xl font-semibold">
+              <IoPersonCircleSharp />
             </Link>
           </div>
         </div>
@@ -149,7 +171,7 @@ const Navbar: React.FC = () => {
                 href="/categories"
                 className="block hover:text-yellow-300 "
               >
-               Categories & Genre
+                Categories & Genre
               </Link>
               <Link
                 href="/watchlist"

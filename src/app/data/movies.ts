@@ -426,7 +426,7 @@ export const movies: Movie[] = [
     image: "/assets/hollywood/blackpanther.jpg",
     desc: "T'Challa, the heir to Wakanda's throne, must step forward to lead his people and defend his nation from a powerful enemy seeking control of vibranium.",
     duration: "2 hours 14 minutes",
-    imdbRating: "7.3/10",
+    imdbRating: "7.3",
     releaseDate: "February 16, 2018",
   }
 ,  
@@ -440,7 +440,7 @@ export const movies: Movie[] = [
   image: "/assets/bollywood/dangal.jpg",
   desc: "Based on a true story, Mahavir Singh Phogat trains his daughters to become world-class wrestlers, challenging societal norms in the process.",
   duration: "2 hours 41 minutes",
-  imdbRating: "8.4/10",
+  imdbRating: "8.4",
   releaseDate: "December 23, 2016",
 }
 ,
@@ -454,7 +454,7 @@ export const movies: Movie[] = [
   image: "/assets/hollywood/fast7.jpg",
   desc: "Dominic Toretto and his crew face their toughest challenge yet as they battle a vengeful brother seeking retribution and try to protect their family.",
   duration: "2 hours 17 minutes",
-  imdbRating: "7.1/10",
+  imdbRating: "7.1",
   releaseDate: "April 3, 2015",
 }
 ,
@@ -468,7 +468,7 @@ export const movies: Movie[] = [
   image: "/assets/bollywood/raazi.jpg",
   desc: "A young Indian woman marries into a Pakistani family to act as an undercover spy during the Indo-Pakistani War of 1971.",
   duration: "2 hours 18 minutes",
-  imdbRating: "7.8/10",
+  imdbRating: "7.8",
   releaseDate: "May 11, 2018",
 },
 {
@@ -481,7 +481,7 @@ export const movies: Movie[] = [
   image: "/assets/hollywood/theavengers.jpg",
   desc: "Earth's mightiest heroes must team up to stop Loki and his alien army from enslaving humanity.",
   duration: "2 hours 23 minutes",
-  imdbRating: "8.0/10",
+  imdbRating: "8.0",
   releaseDate: "May 4, 2012",
 },
 {
@@ -494,7 +494,7 @@ export const movies: Movie[] = [
   image: "/assets/hollywood/tumbbad.jpeg",
   desc: "A man’s greed leads him to search for a hidden treasure in a cursed village guarded by a sinister goddess.",
   duration: "1 hour 44 minutes",
-  imdbRating: "8.2/10",
+  imdbRating: "8.2",
   releaseDate: "October 12, 2018",
 }
 ,
@@ -508,7 +508,7 @@ export const movies: Movie[] = [
   image: "/assets/hollywood/frozen.jpg",
   desc: "Anna sets out on a perilous journey to find her estranged sister Elsa, whose icy powers have trapped their kingdom in eternal winter.",
   duration: "1 hour 42 minutes",
-  imdbRating: "7.4/10",
+  imdbRating: "7.4",
   releaseDate: "November 27, 2013",
 },
 {
@@ -521,7 +521,7 @@ export const movies: Movie[] = [
   image: "/assets/bollywood/kabirsingh.webp",
   desc: "A brilliant but short-tempered surgeon spirals into self-destruction after the love of his life is forced to marry someone else.",
   duration: "2 hours 52 minutes",
-  imdbRating: "7.0/10",
+  imdbRating: "7.0",
   releaseDate: "June 21, 2019",
 },
 {
@@ -534,7 +534,7 @@ export const movies: Movie[] = [
   image: "/assets/bollywood/joker.jpg",
   desc: "Arthur Fleck, a failed comedian, descends into madness and becomes the infamous criminal mastermind known as the Joker.",
   duration: "2 hours 2 minutes",
-  imdbRating: "8.4/10",
+  imdbRating: "8.4",
   releaseDate: "October 4, 2019",
 },
 {
@@ -547,7 +547,7 @@ export const movies: Movie[] = [
   image: "/assets/bollywood/tigerzindahai.jpg",
   desc: "Tiger and Zoya, Indian and Pakistani spies, team up to rescue a group of nurses held hostage by a terrorist organization.",
   duration: "2 hours 41 minutes",
-  imdbRating: "6.0/10",
+  imdbRating: "6.0",
   releaseDate: "December 22, 2017",
 },
 {
@@ -560,7 +560,7 @@ export const movies: Movie[] = [
   image: "/assets/hollywood/interstellar.jpg",
   desc: "A team of astronauts travel through a wormhole in search of a new home for humanity as Earth faces environmental collapse.",
   duration: "2 hours 49 minutes",
-  imdbRating: "8.6/10",
+  imdbRating: "8.6",
   releaseDate: "November 7, 2014",
 }
 ,
@@ -574,7 +574,7 @@ export const movies: Movie[] = [
   image: "/assets/bollywood/znmd.jpg",
   desc: "Three friends take a road trip in Spain that changes their lives forever as they face their fears and strengthen their bonds.",
   duration: "2 hours 35 minutes",
-  imdbRating: "8.2/10",
+  imdbRating: "8.2",
   releaseDate: "July 15, 2011",
 },
 {
@@ -587,7 +587,7 @@ export const movies: Movie[] = [
   image: "/assets/bollywood/sholay.jpg",
   desc: "Two ex-convicts are hired to capture a ruthless bandit terrorizing a village, forming an epic tale of friendship and bravery.",
   duration: "3 hours 24 minutes",
-  imdbRating: "8.1/10",
+  imdbRating: "8.1",
   releaseDate: "August 15, 1975",
 },
 {
@@ -600,7 +600,7 @@ export const movies: Movie[] = [
   image: "/assets/hollywood/inception.jpg",
   desc: "A skilled thief who steals secrets through dream-sharing is given a chance at redemption by planting an idea into a target's mind.",
   duration: "2 hours 28 minutes",
-  imdbRating: "8.8/10",
+  imdbRating: "8.8",
   releaseDate: "July 16, 2010",
 },
 {
@@ -613,7 +613,7 @@ export const movies: Movie[] = [
   image: "/assets/bollywood/war.jpg",
   desc: "An elite soldier is assigned to eliminate his former mentor, unraveling a web of conspiracies and action-packed showdowns.",
   duration: "2 hours 36 minutes",
-  imdbRating: "6.5/10",
+  imdbRating: "6.5",
   releaseDate: "October 2, 2019",
 },
 {
@@ -626,7 +626,7 @@ export const movies: Movie[] = [
   image: "/assets/hollywood/deadpool.jpg",
   desc: "A mercenary with a twisted sense of humor undergoes an experiment that leaves him with accelerated healing powers and a thirst for revenge.",
   duration: "1 hour 48 minutes",
-  imdbRating: "8.0/10",
+  imdbRating: "8.0",
   releaseDate: "February 12, 2016",
 },
 {
@@ -639,7 +639,7 @@ export const movies: Movie[] = [
   image: "/assets/bollywood/dilchahtahai.jpeg",
   desc: "A coming-of-age tale of three close friends navigating life, love, and career while maintaining their strong friendship.",
   duration: "3 hours 5 minutes",
-  imdbRating: "8.1/10",
+  imdbRating: "8.1",
   releaseDate: "August 10, 2001",
 },
 {
@@ -652,7 +652,7 @@ export const movies: Movie[] = [
   image: "/assets/hollywood/madmax.jpeg",
   desc: "In a post-apocalyptic wasteland, a drifter teams up with a rebel leader to escape a tyrannical warlord in a high-octane road chase.",
   duration: "2 hours",
-  imdbRating: "8.1/10",
+  imdbRating: "8.1",
   releaseDate: "May 15, 2015",
 },
 {
@@ -665,7 +665,7 @@ export const movies: Movie[] = [
   image: "/assets/bollywood/jabtakhaijaan.jpg",
   desc: "A bomb disposal expert reflects on his passionate romance and heartbreak while confronting his destiny.",
   duration: "2 hours 56 minutes",
-  imdbRating: "6.7/10",
+  imdbRating: "6.7",
   releaseDate: "November 13, 2012",
 }
 ,
@@ -1727,17 +1727,33 @@ export const movies: Movie[] = [
   duration: "1hour 45minutes",
   imdbRating: "4.5",
   releaseDate: "2018-02-09"
-}
+},
+{
+  id: 131,
+  title: "Chhava",
+  category: "Bollywood",
+  genre: "Historical",
+  actor: "Vicky Kaushal",
+  actress: "Rashmika Mandanna",
+  image: "/assets/bollywood/chhava.jpg",
+  desc: "The film is based on the life of Maratha warrior Chhatrapati Sambhaji Maharaj, focusing on his struggles and resistance against the Mughal emperor Aurangzeb.",
+  duration: "2 hours 41 minutes",
+  imdbRating: "9.3",
+  releaseDate: "February 14, 2025"
+},
 
-
-
-
-
-
-
-
-
-
-
+{
+  id: 132,
+  title: "1983",
+  category: "Bollywood",
+  genre: "Sports Biography",
+  actor: "Ranveer Singh",
+  actress: "Deepika Padukone",
+  image: "/assets/bollywood/1983.jpg",
+  desc: "The film portrays the journey of the Indian national cricket team and their underdog victory at the 1983 Cricket World Cup under the captaincy of Kapil Dev. It highlights the challenges faced by the team and their triumph against the mighty West Indies in the final.",
+  duration: "2 hours 44 minutes",
+  imdbRating: "8.2",
+  releaseDate: "December 24, 2021",
+},
 
 ];

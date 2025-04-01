@@ -28,7 +28,7 @@ const MoviesPage: React.FC = () => {
   };
 
   return (
-    <div className="p-4 mt-[4rem] bg-black min-h-screen">
+    <div className="p-4 mt-[5rem] bg-black min-h-screen">
       <h1 className="text-3xl font-bold mb-6 text-center text-white relative">
         All Movies
         <span className="absolute top-10 left-1/2 transform -translate-x-1/2 h-1 w-25 bg-yellow-300"></span>
@@ -43,7 +43,7 @@ const MoviesPage: React.FC = () => {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
-        <button className="p-2 bg-yellow-500 text-black rounded-lg shadow-md hover:bg-yellow-600 cursor-pointer">
+        <button className="py-2 px-8 bg-gradient-to-r to-rose-500 flex items-center gap-1 justify-center from-yellow-500 text-white rounded-lg  hover:scale-105 cursor-pointer duration-300 transition-all">
           Search
         </button>
       </div>
@@ -55,7 +55,7 @@ const MoviesPage: React.FC = () => {
             <div
               key={movie.id}
               onClick={() => handleMovieClick(movie.id)}
-              className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+              className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 hover:scale-104 cursor-pointer"
             >
               {/* Movie Image */}
               <Image
@@ -94,7 +94,7 @@ const MoviesPage: React.FC = () => {
         <div className="flex justify-center mt-6">
           <button
             onClick={showMoreMovies}
-            className="px-4 py-2 bg-yellow-500 font-bold text-black rounded-lg shadow-md hover:bg-yellow-600 cursor-pointer"
+            className="py-2 px-8 bg-gradient-to-r to-rose-500 flex items-center gap-1 justify-center from-yellow-500 text-white rounded-lg  hover:scale-105 cursor-pointer duration-300 transition-all"
           >
             Show More
           </button>

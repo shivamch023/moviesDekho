@@ -26,7 +26,7 @@ const TopRatedMovies: React.FC = () => {
   return (
     <div className="p-4 mt-[4rem] bg-black min-h-screen">
       <h1 className="text-3xl font-bold mb-6 text-center text-white relative">
-        Top Imdb  8.0+ Rated Movies & Web Series
+        Top Imdb 8.0+ Rated Movies & Web Series
         <span className="absolute top-10 left-1/2 transform -translate-x-1/2 h-1 w-25 bg-yellow-300"></span>
       </h1>
 
@@ -36,7 +36,7 @@ const TopRatedMovies: React.FC = () => {
             <div
               key={movie.id}
               onClick={() => handleMovieClick(movie.id)}
-              className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+              className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 hover:scale-104 cursor-pointer"
             >
               {/* Movie Image */}
               <Image
@@ -77,9 +77,9 @@ const TopRatedMovies: React.FC = () => {
         <div className="text-center mt-6">
           <button
             onClick={handleViewMore}
-            className="px-6 py-2 bg-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-600 transition-colors duration-300"
+            className="py-2 px-8 bg-gradient-to-r to-rose-500  gap-1 justify-center from-yellow-500 text-white rounded-lg  hover:scale-105 cursor-pointer duration-300 transition-all"
           >
-            View More
+            Show More
           </button>
         </div>
       )}

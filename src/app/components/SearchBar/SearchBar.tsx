@@ -4,8 +4,8 @@ import { useState } from "react";
 import { Search } from "lucide-react"; // Add a search icon from lucide-react
 
 const SearchBar: React.FC = () => {
-  const [searchQuery, setSearchQuery] = useState<string>("");
-  const [showResults, setShowResults] = useState<boolean>(false);
+  const [searchQuery, setSearchQuery] = useState<string>(""); // Track the search query
+  const [showResults, setShowResults] = useState<boolean>(false); // Track whether results are shown
 
   // Filter movies based on the search query
   const filteredMovies = movies.filter((movie) =>
@@ -17,7 +17,8 @@ const SearchBar: React.FC = () => {
 
   // Handle search action
   const handleSearch = () => {
-    setShowResults(true);
+    setShowResults(true); // Show the results
+    setSearchQuery(""); // Clear the input field after search
   };
 
   return (
@@ -25,15 +26,25 @@ const SearchBar: React.FC = () => {
       <h1 className="text-3xl font-bold mb-6 text-center">Search Movies</h1>
 
       <div className="flex items-center mb-4 space-x-2">
-        <input
-          type="text"
-          className="w-full p-2 border rounded-lg shadow-sm"
-          placeholder="Search by movie name, genre, actor, actress, or category..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
+        <div className="relative w-full">
+          <input
+            type="text"
+            className="w-full p-2 border rounded-lg shadow-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Search by movie name, genre, actor, actress, or category..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)} // Update the search query on input change
+          />
+
+          {/* Label will be visible only when the input is not empty */}
+          {searchQuery && (
+            <label className="absolute top-0 left-3 text-sm text-blue-500 transform -translate-y-1/2">
+              Search by movie name, genre, actor, actress, or category...
+            </label>
+          )}
+        </div>
+
         <button
-          onClick={handleSearch}
+          onClick={handleSearch} // Call handleSearch to trigger search
           className="p-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 flex items-center"
         >
           <Search className="h-5 w-5" />

@@ -22,7 +22,7 @@ const ActorMoviesPage: React.FC = () => {
   };
 
   return (
-    <div className="p-4 bg-black min-h-screen mt-[4rem] relative">
+    <div className="p-4 bg-black min-h-screen mt-[5rem] relative">
       {/* Page Title */}
       <div className="relative flex items-center justify-between">
         <button
@@ -45,7 +45,7 @@ const ActorMoviesPage: React.FC = () => {
             <div
               key={movie.id}
               onClick={() => handleMovieClick(movie.id)}
-              className="bg-gray-900 cursor-pointer border rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-yellow-300"
+              className="bg-gray-900 cursor-pointer border rounded-lg shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-104 text-yellow-300"
             >
               {/* Movie Image */}
               <Image

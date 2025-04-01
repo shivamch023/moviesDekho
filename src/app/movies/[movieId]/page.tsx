@@ -87,7 +87,7 @@ const MovieDetailsPage: React.FC = () => {
     : relatedMovies.slice(0, 5);
 
   return (
-    <div className="p-4 bg-black mt-[4rem] min-h-screen">
+    <div className="p-4 bg-black mt-[5rem] min-h-screen">
       <div
         className="flex flex-col lg:flex-row items-center lg:items-start bg-gradient-to-r from-black via-gray-900 to-gray-800 text-black p-6 rounded-lg shadow-lg"
         style={{
@@ -147,7 +147,7 @@ const MovieDetailsPage: React.FC = () => {
                   : "bg-green-500 hover:bg-green-600"
               }`}
             >
-              <FaThumbsUp /> ({likes})
+              <FaThumbsUp /> {likes}
             </button>
             <button
               onClick={handleDislike}
@@ -157,14 +157,14 @@ const MovieDetailsPage: React.FC = () => {
                   : "bg-red-500 hover:bg-red-600"
               }`}
             >
-              <FaThumbsDown /> ({dislikes})
+              <FaThumbsDown /> {dislikes}
             </button>
           </div>
           <div className="flex flex-wrap gap-4 mt-4">
-            <button className="px-6 py-2 gap-2 flex cursor-pointer items-center bg-yellow-500 text-black rounded-lg shadow-md hover:bg-yellow-600 transition">
+            <button className="py-2 px-8 bg-gradient-to-r to-rose-500 flex items-center gap-1 justify-center from-yellow-500 text-white rounded-lg  hover:scale-108 cursor-pointer duration-300 transition-all">
               Watch Now <FaEye />
             </button>
-            <button className="px-6 py-2 gap-2 cursor-pointer flex items-center bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition">
+            <button className="py-2 px-8 bg-gradient-to-r to-rose-500 flex items-center gap-1 justify-center from-yellow-500 text-white rounded-lg  hover:scale-108 cursor-pointer duration-300 transition-all">
               Download <FaDownload />
             </button>
             <button
@@ -192,7 +192,7 @@ const MovieDetailsPage: React.FC = () => {
               <div
                 key={movie.id}
                 onClick={() => handleMovieClick(movie.id)}
-                className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+                className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 hover:scale-104 cursor-pointer"
               >
                 <Image
                   src={movie.image}
@@ -230,7 +230,7 @@ const MovieDetailsPage: React.FC = () => {
         {relatedMovies.length > 5 && !showAllMovies && (
           <button
             onClick={() => setShowAllMovies(true)}
-            className="mt-4 cursor-pointer px-6 py-2 bg-yellow-500 text-black rounded-lg shadow-md hover:bg-yellow-600 transition"
+            className="mt-4 py-2 px-8 bg-gradient-to-r to-rose-500 flex items-center gap-1 justify-center from-yellow-500 text-white rounded-lg  hover:scale-105 cursor-pointer duration-300 transition-all"
           >
             View More
           </button>
