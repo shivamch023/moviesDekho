@@ -162,11 +162,12 @@ const MovieDetailsPage: React.FC = () => {
           </div>
           <div className="flex flex-wrap gap-4 mt-4">
             <button className="py-2 px-8 bg-gradient-to-r to-rose-500 flex items-center gap-1 justify-center from-yellow-500 text-white rounded-lg  hover:scale-108 cursor-pointer duration-300 transition-all">
-              Watch Now <FaEye />
-            </button>
-            <button className="py-2 px-8 bg-gradient-to-r to-rose-500 flex items-center gap-1 justify-center from-yellow-500 text-white rounded-lg  hover:scale-108 cursor-pointer duration-300 transition-all">
               Download <FaDownload />
             </button>
+            <button className="py-2 px-8 bg-gradient-to-r to-rose-500 flex items-center gap-1 justify-center from-yellow-500 text-white rounded-lg  hover:scale-108 cursor-pointer duration-300 transition-all">
+              Watch Now <FaEye />
+            </button>
+
             <button
               onClick={() => handleWatchlist(currentMovie.id)}
               className={`px-6 py-2 text-white rounded-lg flex cursor-pointer items-center justify-center gap-2 shadow-md transition ${

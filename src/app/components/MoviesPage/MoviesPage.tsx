@@ -35,15 +35,15 @@ const MoviesPage: React.FC = () => {
       </h1>
 
       {/* Search Bar */}
-      <div className="flex items-center justify-center mb-6 space-x-2">
+      <div className="flex items-center  justify-center mb-6 space-x-2">
         <input
           type="text"
-          className="w-1/2 p-2 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500 shadow-md"
+          className="md:w-1/2 w-full p-2 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500 shadow-md"
           placeholder="Search by movie name, genre, actor, actress, or category..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
-        <button className="py-2 px-8 bg-gradient-to-r to-rose-500 flex items-center gap-1 justify-center from-yellow-500 text-white rounded-lg  hover:scale-105 cursor-pointer duration-300 transition-all">
+        <button className="py-2 md:px-8 px-2 bg-gradient-to-r to-rose-500 flex items-center gap-1 justify-center from-yellow-500 text-white rounded-lg  hover:scale-105 cursor-pointer duration-300 transition-all">
           Search
         </button>
       </div>
@@ -63,7 +63,7 @@ const MoviesPage: React.FC = () => {
                 alt={movie.title}
                 width={400}
                 height={600}
-                className="rounded-t-lg w-full h-[300px] object-cover"
+                className="rounded-t-lg w-full h-[300px]  object-cover"
               />
               {/* Movie Details */}
               <div className="p-4">

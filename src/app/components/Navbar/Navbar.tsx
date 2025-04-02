@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaFilm } from "react-icons/fa";
-import { IoPersonCircleSharp } from "react-icons/io5";
+import { IoCloseSharp, IoPersonCircleSharp } from "react-icons/io5";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -134,27 +134,18 @@ const Navbar: React.FC = () => {
             variants={drawerVariants}
           >
             <div className="flex items-center justify-between p-4">
-              <Link href="/" className="text-xl font-bold">
+              <Link
+                href="/"
+                onClick={() => setIsOpen(false)}
+                className="text-xl font-bold text-white"
+              >
                 MovieDekho
               </Link>
               <button
                 onClick={() => setIsOpen(false)}
-                className="text-yellow-500 hover:text-yellow-300 focus:outline-none"
+                className="text-white hover:text-white font-bold text-2xl focus:outline-none"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+                <IoCloseSharp />
               </button>
             </div>
             <div className="bg-yellow-300 w-full h-0.5"></div>
