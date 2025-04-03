@@ -10,6 +10,10 @@ const MovieDetailsPage: React.FC = () => {
   const { movieId } = useParams();
   const router = useRouter();
 
+  const [showVideoModal, setShowVideoModal] = useState(false);
+  const [downloadProgress, setDownloadProgress] = useState(0);
+  const [isDownloading, setIsDownloading] = useState(false);
+
   const [likes, setLikes] = useState(0);
   const [dislikes, setDislikes] = useState(0);
   const [userAction, setUserAction] = useState<string | null>(null);
@@ -71,6 +75,42 @@ const MovieDetailsPage: React.FC = () => {
       setDislikes((prev) => prev - 1);
       setUserAction(null);
     }
+  };
+
+  const handleWatchNow = () => {
+    setShowVideoModal(true);
+  };
+
+  // Download handler with progress
+  const handleDownload = async () => {
+    setIsDownloading(true);
+    setDownloadProgress(0);
+
+    const url = currentMovie.video;
+    const response = await fetch(url);
+    const blob = await response.blob();
+    const totalSize = blob.size;
+    let downloadedSize = 0;
+
+    // Simulate progressive download
+    const interval = setInterval(() => {
+      downloadedSize += totalSize / 10; // Increase in chunks
+      const progress = Math.min((downloadedSize / totalSize) * 100, 100);
+      setDownloadProgress(progress);
+
+      if (progress >= 100) {
+        clearInterval(interval);
+        setIsDownloading(false);
+
+        // Create download link
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = `${currentMovie.title}.mp4`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    }, 500);
   };
 
   const handleWatchlist = (movieId: number) => {
@@ -161,12 +201,48 @@ const MovieDetailsPage: React.FC = () => {
             </button>
           </div>
           <div className="flex flex-wrap gap-4 mt-4">
-            <button className="py-2 px-8 bg-gradient-to-r to-rose-500 flex items-center gap-1 justify-center from-yellow-500 text-white rounded-lg  hover:scale-108 cursor-pointer duration-300 transition-all">
-              Download <FaDownload />
+            <button
+              onClick={handleDownload}
+              disabled={isDownloading}
+              className="py-2 px-8 flex items-center gap-1 justify-center bg-gradient-to-r to-rose-500 from-yellow-500 text-white rounded-lg hover:scale-105 cursor-pointer transition-all"
+            >
+              {isDownloading
+                ? `Downloading ${Math.round(downloadProgress)}%`
+                : "Download"}
+              <FaDownload />
             </button>
-            <button className="py-2 px-8 bg-gradient-to-r to-rose-500 flex items-center gap-1 justify-center from-yellow-500 text-white rounded-lg  hover:scale-108 cursor-pointer duration-300 transition-all">
+            {isDownloading && (
+              <div className="w-full bg-gray-700 rounded-full mt-4">
+                <div
+                  className="h-2 bg-green-500 rounded-full"
+                  style={{ width: `${downloadProgress}%` }}
+                />
+              </div>
+            )}
+            <button
+              onClick={handleWatchNow}
+              className="py-2 px-8 bg-gradient-to-r to-rose-500 flex items-center gap-1 justify-center from-yellow-500 text-white rounded-lg  hover:scale-108 cursor-pointer duration-300 transition-all"
+            >
               Watch Now <FaEye />
             </button>
+            {/* Video Modal */}
+            {showVideoModal && (
+              <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-80 z-50">
+                <div className="relative bg-gray-900 rounded-lg p-6 w-full max-w-3xl">
+                  <button
+                    onClick={() => setShowVideoModal(false)}
+                    className="absolute top-3 right-3 text-white text-lg font-bold"
+                  >
+                    ✖
+                  </button>
+                  <video
+                    controls
+                    className="w-full rounded-lg shadow-lg"
+                    src={currentMovie.video}
+                  />
+                </div>
+              </div>
+            )}
 
             <button
               onClick={() => handleWatchlist(currentMovie.id)}

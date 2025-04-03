@@ -10,6 +10,7 @@ export interface Movie {
   duration: string;
   imdbRating: string;
   releaseDate: string;
+  video:string;
 }
 
 export const movies: Movie[] = [
@@ -25,6 +26,7 @@ export const movies: Movie[] = [
     duration: "3h 12m",
     imdbRating: "7.8",
     releaseDate: "December 16, 2022",
+    video:"/assets/demo.mp4"
   },
   {
     id: 2,
@@ -38,6 +40,8 @@ export const movies: Movie[] = [
     duration: "3h 7m",
     imdbRating: "8.0",
     releaseDate: "March 25, 2022.",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 3,
@@ -51,6 +55,8 @@ export const movies: Movie[] = [
     duration: "2h 58m",
     imdbRating: "7.9",
     releaseDate: " January 13, 2021",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 4,
@@ -64,6 +70,7 @@ export const movies: Movie[] = [
     duration: "2h 59m",
     imdbRating: "7.6",
     releaseDate: "April 26, 2019",
+    video:"/assets/demo.mp4"
   },
   {
     id: 5,
@@ -76,7 +83,8 @@ export const movies: Movie[] = [
     desc: "Nirahua Hindustani एक ग्रामीण युवक की कहानी है, जो अपनी सादगी और प्रेम से शहरी लड़की का दिल जीत लेता है।",
     duration: "2h 15m",
     imdbRating: "6.5",
-    releaseDate: "February 14, 2014",
+    releaseDate: "February 14, 2014",    
+    video:"/assets/demo.mp4",
   },
   {
     id: 6,
@@ -89,7 +97,9 @@ export const movies: Movie[] = [
     desc: "The Wandering Earth follows humanity's attempt to survive by moving Earth away from the dying Sun using massive engines, while facing cosmic challenges.",
     duration: "2h 5m",
     imdbRating: "6.0",
-    releaseDate: " February 5, 2019",
+    releaseDate: "February 5, 2019",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 7,
@@ -103,6 +113,8 @@ export const movies: Movie[] = [
     duration: "2h 6m",
     imdbRating: "7.9",
     releaseDate: "May 2, 2008",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 8,
@@ -115,7 +127,9 @@ export const movies: Movie[] = [
     desc: "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
     duration: "2h 32m",
     imdbRating: "9.0",
-    releaseDate: "",
+    releaseDate: "18 July 2008",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 9,
@@ -128,7 +142,9 @@ export const movies: Movie[] = [
     desc: "A criminal mastermind plans the biggest heist in recorded history — to print billions of euros in the Royal Mint of Spain.",
     duration: "1h 5m (per episode)",
     imdbRating: "8.3",
-    releaseDate: "",
+    releaseDate: "Season 1: 2 May 2017",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 10,
@@ -141,7 +157,9 @@ export const movies: Movie[] = [
     desc: "The story of an ancient kingdom and the rise of two brothers, one of whom seeks to claim the throne, leading to a fierce battle for power.",
     duration: "2h 39m",
     imdbRating: "8.0",
-    releaseDate: "",
+    releaseDate: "10 July 2015",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 11,
@@ -155,6 +173,8 @@ export const movies: Movie[] = [
     duration: "2 hours and 0 minutes.",
     imdbRating: "7.9",
     releaseDate: "",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 12,
@@ -167,7 +187,8 @@ export const movies: Movie[] = [
     desc: "the Avengers work together to undo the devastation caused by Thanos in Infinity War, where he wiped out half of all life in the universe. They travel through time to collect the Infinity Stones and, in a final battle, confront Thanos to restore balance and save the universe.",
     duration: "3h 1m",
     imdbRating: "8.4",
-    releaseDate: "",
+    releaseDate: "26 April 2019 ",
+     video:"/assets/demo.mp4"
   },
   {
     id: 13,
@@ -180,7 +201,9 @@ export const movies: Movie[] = [
     desc: "Wonder Woman follows Diana, an Amazonian princess, who leaves her sheltered island home to fight alongside humans in World War I after discovering her true destiny as a powerful warrior, ultimately facing the god Ares to end the war.",
     duration: "2h 21m",
     imdbRating: "7.4",
-    releaseDate: "",
+    releaseDate: "2 June 2017",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 14,
@@ -194,6 +217,8 @@ export const movies: Movie[] = [
     duration: "41h 40m",
     imdbRating: "9.5",
     releaseDate: "January 20, 2008",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 15,
@@ -207,6 +232,8 @@ export const movies: Movie[] = [
     duration: "2h 48m",
     imdbRating: "8.4",
     releaseDate: "April 14, 2022",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 16,
@@ -220,6 +247,8 @@ export const movies: Movie[] = [
     duration: "1h 55m",
     imdbRating: "5.7",
     releaseDate: "June 19, 1998",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 17,
@@ -233,6 +262,8 @@ export const movies: Movie[] = [
     duration: "2h 28m",
     imdbRating: "8.2",
     releaseDate: "December 17, 2021",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 18,
@@ -246,6 +277,8 @@ export const movies: Movie[] = [
     duration: "2 hours 23 minutes",
     imdbRating: "6.8",
     releaseDate: "December 21, 2018",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 19,
@@ -259,6 +292,8 @@ export const movies: Movie[] = [
     duration: "Each episode ranges from 42 minutes to 1 hour 17 minutes, depending on the season and episode.",
     imdbRating: "8.7",
     releaseDate: "July 15, 2016,",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 20,
@@ -272,6 +307,8 @@ export const movies: Movie[] = [
     duration: "2 hours 43 minutes",
     imdbRating: "8.2",
     releaseDate: "July 31, 2015",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 21,
@@ -285,6 +322,8 @@ export const movies: Movie[] = [
     duration: "1 hour 39 minutes",
     imdbRating: "7.7",
     releaseDate: "December 23, 2004 (China) and April 22, 2005 (USA)",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 22,
@@ -298,6 +337,8 @@ export const movies: Movie[] = [
     duration: "1 hour 55 minutes",
     imdbRating: "7.0",
     releaseDate: "April 21, 2011 (Australia) and May 6, 2011 (USA)",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 23,
@@ -311,6 +352,8 @@ export const movies: Movie[] = [
     duration: "2 hours 24 minute",
     imdbRating: "7.0",
     releaseDate: "June 16, 2023 (United States)​",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 24,
@@ -324,6 +367,8 @@ export const movies: Movie[] = [
     duration: "Per Episode 47 minute to 1 hours",
     imdbRating: "8.1",
     releaseDate: "Season 1: December 20, 2019 , Season 2: December 17, 2021 ,Season 3: June 29, 2023 (Part 1), July 27, 2023 (Part 2)",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 25,
@@ -337,6 +382,8 @@ export const movies: Movie[] = [
     duration: "2 hours 50 minutes",
     imdbRating: "8.4",
     releaseDate: "December 25, 2009",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 26,
@@ -350,6 +397,8 @@ export const movies: Movie[] = [
     duration: "3 hours 44 minutes",
     imdbRating: "8.1",
     releaseDate: "June 15, 2001",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 27,
@@ -363,6 +412,8 @@ export const movies: Movie[] = [
     duration: "3 hours 10 minutes",
     imdbRating: "8.0",
     releaseDate: "October 20, 1995",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 28,
@@ -376,6 +427,8 @@ export const movies: Movie[] = [
     duration: "2 hours 36 minutes",
     imdbRating: "8.3",
     releaseDate: "December 21, 2018",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 29,
@@ -389,6 +442,8 @@ export const movies: Movie[] = [
     duration: "2 hours 29 minutes",
     imdbRating: "8.4",
     releaseDate: "April 27, 2018 (Worldwide)",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 30,
@@ -402,6 +457,8 @@ export const movies: Movie[] = [
     duration: "2 hours 47 minutes",
     imdbRating: "8.2",
     releaseDate: "April 28, 2017",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 31,
@@ -415,6 +472,8 @@ export const movies: Movie[] = [
     duration: "2 hours 21 minutes",
     imdbRating: "6.0",
     releaseDate: "August 8, 2013",
+    video:"/assets/demo.mp4"
+
   },
   {
     id: 32,
@@ -428,6 +487,9 @@ export const movies: Movie[] = [
     duration: "2 hours 14 minutes",
     imdbRating: "7.3",
     releaseDate: "February 16, 2018",
+    video:"/assets/demo.mp4"
+
+
   }
 ,  
 {
@@ -442,6 +504,8 @@ export const movies: Movie[] = [
   duration: "2 hours 41 minutes",
   imdbRating: "8.4",
   releaseDate: "December 23, 2016",
+  video:"/assets/demo.mp4"
+
 }
 ,
 {
@@ -456,6 +520,8 @@ export const movies: Movie[] = [
   duration: "2 hours 17 minutes",
   imdbRating: "7.1",
   releaseDate: "April 3, 2015",
+  video:"/assets/demo.mp4"
+
 }
 ,
 {
@@ -470,6 +536,8 @@ export const movies: Movie[] = [
   duration: "2 hours 18 minutes",
   imdbRating: "7.8",
   releaseDate: "May 11, 2018",
+  video:"/assets/demo.mp4"
+
 },
 {
   id: 36,
@@ -483,6 +551,8 @@ export const movies: Movie[] = [
   duration: "2 hours 23 minutes",
   imdbRating: "8.0",
   releaseDate: "May 4, 2012",
+  video:"/assets/demo.mp4"
+
 },
 {
   id: 37,
@@ -496,6 +566,8 @@ export const movies: Movie[] = [
   duration: "1 hour 44 minutes",
   imdbRating: "8.2",
   releaseDate: "October 12, 2018",
+  video:"/assets/demo.mp4"
+
 }
 ,
 {
@@ -510,6 +582,8 @@ export const movies: Movie[] = [
   duration: "1 hour 42 minutes",
   imdbRating: "7.4",
   releaseDate: "November 27, 2013",
+  video:"/assets/demo.mp4"
+
 },
 {
   id: 39,
@@ -523,6 +597,8 @@ export const movies: Movie[] = [
   duration: "2 hours 52 minutes",
   imdbRating: "7.0",
   releaseDate: "June 21, 2019",
+  video:"/assets/demo.mp4"
+
 },
 {
   id: 40,
@@ -536,6 +612,8 @@ export const movies: Movie[] = [
   duration: "2 hours 2 minutes",
   imdbRating: "8.4",
   releaseDate: "October 4, 2019",
+  video:"/assets/demo.mp4"
+
 },
 {
   id: 41,
@@ -549,6 +627,8 @@ export const movies: Movie[] = [
   duration: "2 hours 41 minutes",
   imdbRating: "6.0",
   releaseDate: "December 22, 2017",
+  video:"/assets/demo.mp4"
+
 },
 {
   id: 42,
@@ -562,6 +642,8 @@ export const movies: Movie[] = [
   duration: "2 hours 49 minutes",
   imdbRating: "8.6",
   releaseDate: "November 7, 2014",
+  video:"/assets/demo.mp4"
+
 }
 ,
 {
@@ -576,6 +658,8 @@ export const movies: Movie[] = [
   duration: "2 hours 35 minutes",
   imdbRating: "8.2",
   releaseDate: "July 15, 2011",
+  video:"/assets/demo.mp4"
+
 },
 {
   id: 44,
@@ -589,6 +673,8 @@ export const movies: Movie[] = [
   duration: "3 hours 24 minutes",
   imdbRating: "8.1",
   releaseDate: "August 15, 1975",
+  video:"/assets/demo.mp4"
+
 },
 {
   id: 45,
@@ -602,6 +688,8 @@ export const movies: Movie[] = [
   duration: "2 hours 28 minutes",
   imdbRating: "8.8",
   releaseDate: "July 16, 2010",
+  video:"/assets/demo.mp4"
+
 },
 {
   id: 46,
@@ -615,6 +703,8 @@ export const movies: Movie[] = [
   duration: "2 hours 36 minutes",
   imdbRating: "6.5",
   releaseDate: "October 2, 2019",
+  video:"/assets/demo.mp4"
+
 },
 {
   id: 47,
@@ -628,6 +718,8 @@ export const movies: Movie[] = [
   duration: "1 hour 48 minutes",
   imdbRating: "8.0",
   releaseDate: "February 12, 2016",
+  video:"/assets/demo.mp4"
+
 },
 {
   id: 48,
@@ -641,6 +733,8 @@ export const movies: Movie[] = [
   duration: "3 hours 5 minutes",
   imdbRating: "8.1",
   releaseDate: "August 10, 2001",
+  video:"/assets/demo.mp4"
+
 },
 {
   id: 49,
@@ -654,6 +748,8 @@ export const movies: Movie[] = [
   duration: "2 hours",
   imdbRating: "8.1",
   releaseDate: "May 15, 2015",
+  video:"/assets/demo.mp4"
+
 },
 {
   id: 50,
@@ -667,6 +763,8 @@ export const movies: Movie[] = [
   duration: "2 hours 56 minutes",
   imdbRating: "6.7",
   releaseDate: "November 13, 2012",
+  video:"/assets/demo.mp4"
+
 }
 ,
 {
@@ -680,7 +778,9 @@ export const movies: Movie[] = [
   desc: "The story of a young couple who face challenges due to societal pressures and their financial struggles, but their love and determination to succeed help them overcome all odds.",
   duration: "2h 30m",
   imdbRating: "7.3",
-  releaseDate: "2004-03-12"
+  releaseDate: "2004-03-12",
+  video:"/assets/demo.mp4"
+
 }
 ,
   {
@@ -694,7 +794,8 @@ export const movies: Movie[] = [
     desc: "A struggling rickshaw driver faces numerous challenges in life but finds solace in his love for a woman.",
     duration: "2h 45m",
     imdbRating: "7.5",
-    releaseDate: "2008-06-15"
+    releaseDate: "2008-06-15",  video:"/assets/demo.mp4"
+
   },
   {
     id: 53,
@@ -707,7 +808,7 @@ export const movies: Movie[] = [
     desc: "A touching story of family values, tradition, and the bond between siblings in rural India.",
     duration: "3h 10m",
     imdbRating: "7.8",
-    releaseDate: "2006-01-26"
+    releaseDate: "2006-01-26",  video:"/assets/demo.mp4"
   },
   {
     id: 54,
@@ -720,7 +821,7 @@ export const movies: Movie[] = [
     desc: "A charming love story with a strong patriotic undertone and gripping drama.",
     duration: "2h 50m",
     imdbRating: "7.2",
-    releaseDate: "2017-03-14"
+    releaseDate: "2017-03-14",  video:"/assets/demo.mp4"
   },
   {
     id: 55,
@@ -733,7 +834,7 @@ export const movies: Movie[] = [
     desc: "A tale of love and betrayal, exploring the intricacies of relationships and trust.",
     duration: "2h 55m",
     imdbRating: "7.4",
-    releaseDate: "2010-10-22"
+    releaseDate: "2010-10-22",  video:"/assets/demo.mp4"
   },
   {
     id: 56,
@@ -746,7 +847,7 @@ export const movies: Movie[] = [
     desc: "A comedy-packed story revolving around a mischievous character's humorous escapades.",
     duration: "2h 35m",
     imdbRating: "7.0",
-    releaseDate: "2013-08-18"
+    releaseDate: "2013-08-18",  video:"/assets/demo.mp4"
   },
   {
     id: 57,
@@ -759,7 +860,7 @@ export const movies: Movie[] = [
     desc: "A patriotic drama showcasing the courage and dedication of a brave individual towards their nation.",
     duration: "2h 40m",
     imdbRating: "7.9",
-    releaseDate: "2019-01-26"
+    releaseDate: "2019-01-26",  video:"/assets/demo.mp4"
   }
 ,
 {
@@ -773,7 +874,7 @@ export const movies: Movie[] = [
   desc: "A hilarious and heartwarming story about a kind-hearted but mischievous young man whose antics bring laughter and lessons to his village.",
   duration: "2h 45m",
   imdbRating: "7.0",
-  releaseDate: "2015-10-10"
+  releaseDate: "2015-10-10",  video:"/assets/demo.mp4"
 }
 ,
 {
@@ -787,7 +888,7 @@ export const movies: Movie[] = [
   desc: "A touching drama revolving around family values, societal norms, and the emotional journey of a daughter's farewell from her parents' home.",
   duration: "2h 40m",
   imdbRating: "6.8",
-  releaseDate: "2009-06-25"
+  releaseDate: "2009-06-25",  video:"/assets/demo.mp4"
 }
 ,
 {
@@ -801,7 +902,7 @@ export const movies: Movie[] = [
   desc: "A romantic tale of love, loyalty, and the cultural divide between two families living on opposite sides of the Ganges River.",
   duration: "2h 50m",
   imdbRating: "7.5",
-  releaseDate: "2018-12-05"
+  releaseDate: "2018-12-05",  video:"/assets/demo.mp4"
 }
 ,
 {
@@ -815,7 +916,7 @@ export const movies: Movie[] = [
   desc: "A romantic drama exploring the complexities of love, desire, and unconventional relationships, based on the bestselling novel by E.L. James.",
   duration: "2h 5m",
   imdbRating: "4.2",
-  releaseDate: "2015-02-13"
+  releaseDate: "2015-02-13",  video:"/assets/demo.mp4"
 }
 ,
 {
@@ -829,7 +930,7 @@ export const movies: Movie[] = [
   desc: "A steamy and controversial romantic drama about a dominant man and his quest to make a woman fall in love with him within 365 days.",
   duration: "1h 54m",
   imdbRating: "3.3",
-  releaseDate: "2020-02-07"
+  releaseDate: "2020-02-07",  video:"/assets/demo.mp4"
 }
 ,
 {
@@ -843,7 +944,7 @@ export const movies: Movie[] = [
   desc: "A psychological thriller that follows a detective investigating a brutal murder while entangled with a seductive and enigmatic writer.",
   duration: "2h 8m",
   imdbRating: "7.0",
-  releaseDate: "1992-03-20"
+  releaseDate: "1992-03-20",  video:"/assets/demo.mp4"
 }
 ,
 {
@@ -857,7 +958,7 @@ export const movies: Movie[] = [
   desc: "A poignant coming-of-age story exploring love, passion, and self-discovery through the intense relationship between two young women.",
   duration: "3h 0m",
   imdbRating: "7.7",
-  releaseDate: "2013-05-23"
+  releaseDate: "2013-05-23",  video:"/assets/demo.mp4"
 }
 ,
 {
@@ -871,7 +972,7 @@ export const movies: Movie[] = [
   desc: "The story of Jordan Belfort, a stockbroker who rises to immense wealth through fraudulent practices, only to face the consequences of his lifestyle.",
   duration: "3h 0m",
   imdbRating: "8.2",
-  releaseDate: "2013-12-25"
+  releaseDate: "2013-12-25",  video:"/assets/demo.mp4"
 }
 ,
 {
@@ -885,7 +986,7 @@ export const movies: Movie[] = [
   desc: "A passionate and fatal love story of a woman who seduces a man into her web of deceit and murder.",
   duration: "2h 15m",
   imdbRating: "5.4",
-  releaseDate: "2003-01-17"
+  releaseDate: "2003-01-17",  video:"/assets/demo.mp4"
 }
 ,
 {
@@ -899,7 +1000,7 @@ export const movies: Movie[] = [
   desc: "A thrilling tale of love and betrayal that spirals into dangerous obsession.",
   duration: "2h 10m",
   imdbRating: "5.4",
-  releaseDate: "2004-04-02",
+  releaseDate: "2004-04-02",  video:"/assets/demo.mp4"
 },
 {
   id: 68,
@@ -912,7 +1013,7 @@ export const movies: Movie[] = [
   desc: "An intense story of revenge and manipulation in the corporate world.",
   duration: "2h 20m",
   imdbRating: "5.2",
-  releaseDate: "2012-04-20",
+  releaseDate: "2012-04-20",  video:"/assets/demo.mp4"
 },
 {
   id: 69,
@@ -925,7 +1026,7 @@ export const movies: Movie[] = [
   desc: "A chilling horror story about a couple whose lives are haunted by supernatural forces.",
   duration: "2h 34m",
   imdbRating: "6.4",
-  releaseDate: "2002-02-01",
+  releaseDate: "2002-02-01", video:"/assets/demo.mp4"
 },
 {
   id: 70,
@@ -938,7 +1039,7 @@ export const movies: Movie[] = [
   desc: "A paranormal thriller inspired by real events, documenting a couple's eerie encounter.",
   duration: "1h 33m",
   imdbRating: "4.9",
-  releaseDate: "2011-05-13",
+  releaseDate: "2011-05-13", video:"/assets/demo.mp4"
 },
 
 {
@@ -952,7 +1053,7 @@ export const movies: Movie[] = [
   desc: "A haunting journey through a web of infidelity, obsession, and secret societies.",
   duration: "2h 39m",
   imdbRating: "7.4",
-  releaseDate: "1999-07-16",
+  releaseDate: "1999-07-16", video:"/assets/demo.mp4"
 },
 {
   id: 72,
@@ -965,7 +1066,7 @@ export const movies: Movie[] = [
   desc: "A provocative exploration of relationships and rebellion in 1968 Paris.",
   duration: "1h 55m",
   imdbRating: "7.2",
-  releaseDate: "2003-09-01",
+  releaseDate: "2003-09-01", video:"/assets/demo.mp4"
 },
 {
   id: 73,
@@ -978,7 +1079,7 @@ export const movies: Movie[] = [
   desc: "A suspenseful road trip tale that takes a dark turn into murder and madness.",
   duration: "1h 57m",
   imdbRating: "6.7",
-  releaseDate: "1993-09-03",
+  releaseDate: "1993-09-03", video:"/assets/demo.mp4"
 },
 {
   id: 74,
@@ -991,7 +1092,7 @@ export const movies: Movie[] = [
   desc: "A groundbreaking anthology exploring love, betrayal, and voyeurism.",
   duration: "2h 2m",
   imdbRating: "7.1",
-  releaseDate: "2010-03-19",
+  releaseDate: "2010-03-19", video:"/assets/demo.mp4"
 },
 {
   id: 75,
@@ -1004,7 +1105,7 @@ export const movies: Movie[] = [
   desc: "A dark tale of seduction and survival in a harsh urban world.",
   duration: "1h 35m",
   imdbRating: "6.5",
-  releaseDate: "2013-08-02",
+  releaseDate: "2013-08-02", video:"/assets/demo.mp4"
 },
 
 {
@@ -1018,7 +1119,7 @@ export const movies: Movie[] = [
   desc: "A gripping tale of deception and passion set in 1930s Korea.",
   duration: "2h 25m",
   imdbRating: "8.1",
-  releaseDate: "2016-06-01",
+  releaseDate: "2016-06-01", video:"/assets/demo.mp4"
 },
 {
   id: 77,
@@ -1031,7 +1132,7 @@ export const movies: Movie[] = [
   desc: "A humorous and heartfelt look at love, relationships, and self-discovery.",
   duration: "1h 30m",
   imdbRating: "6.5",
-  releaseDate: "2013-09-27",
+  releaseDate: "2013-09-27", video:"/assets/demo.mp4"
 },
 {
   id: 78,
@@ -1044,7 +1145,7 @@ export const movies: Movie[] = [
   desc: "A powerful story of a woman seeking justice in a patriarchal society.",
   duration: "2h 30m",
   imdbRating: "7.1",
-  releaseDate: "1988-05-13",
+  releaseDate: "1988-05-13", video:"/assets/demo.mp4"
 },
 {
   id: 79,
@@ -1057,7 +1158,7 @@ export const movies: Movie[] = [
   desc: "A sensual exploration of love, betrayal, and desire in ancient India.",
   duration: "1h 57m",
   imdbRating: "6.0",
-  releaseDate: "1996-09-11",
+  releaseDate: "1996-09-11", video:"/assets/demo.mp4"
 },
 {
   id: 80,
@@ -1070,7 +1171,7 @@ export const movies: Movie[] = [
   desc: "A visually stunning tale of forbidden love and timeless passion.",
   duration: "1h 57m",
   imdbRating: "6.0",
-  releaseDate: "1996-09-11",
+  releaseDate: "1996-09-11", video:"/assets/demo.mp4"
 },
 {
   id: 81,
@@ -1083,7 +1184,7 @@ export const movies: Movie[] = [
   desc: "A gripping tale of loyalty and betrayal in the criminal underworld.",
   duration: "2h 27m",
   imdbRating: "8.0",
-  releaseDate: "2023-03-30",
+  releaseDate: "2023-03-30", video:"/assets/demo.mp4"
 },
 {
   id: 82,
@@ -1096,7 +1197,7 @@ export const movies: Movie[] = [
   desc: "A comedy of errors where two friends try to impress their loves but end up in hilarious chaos.",
   duration: "2h 40m",
   imdbRating: "6.3",
-  releaseDate: "2009-11-27",
+  releaseDate: "2009-11-27", video:"/assets/demo.mp4"
 }
 ,
 {
@@ -1110,7 +1211,7 @@ export const movies: Movie[] = [
   desc: "Three men find themselves in a hilarious tangle of confusion, crime, and unexpected riches.",
   duration: "2h 36m",
   imdbRating: "8.2",
-  releaseDate: "2000-03-31",
+  releaseDate: "2000-03-31", video:"/assets/demo.mp4"
 }
 ,
 {
@@ -1124,7 +1225,7 @@ export const movies: Movie[] = [
   desc: "The epic saga of love and patriotism continues.",
   duration: "2h 50m",
   imdbRating: "8.4",
-  releaseDate: "2023-08-11",
+  releaseDate: "2023-08-11", video:"/assets/demo.mp4"
 },
 {
   id: 85,
@@ -1137,7 +1238,7 @@ export const movies: Movie[] = [
   desc: "A hilarious story of love, confusion, and double lives as a man juggles two marriages.",
   duration: "2h 35m",
   imdbRating: "7.0",
-  releaseDate: "2016-03-18",
+  releaseDate: "2016-03-18", video:"/assets/demo.mp4"
 }
 ,
 {
@@ -1151,7 +1252,7 @@ export const movies: Movie[] = [
   desc: "The rise of Pushpa continues as he faces greater adversaries.",
   duration: "2h 58m",
   imdbRating: "9.0",
-  releaseDate: "2024-08-15",
+  releaseDate: "2024-08-15", video:"/assets/demo.mp4",
 },
 {
   id: 87,
@@ -1164,7 +1265,7 @@ export const movies: Movie[] = [
   desc: "A compelling tale of love, devotion, and sacrifices along the holy Ganges.",
   duration: "2h 30m",
   imdbRating: "8.0",
-  releaseDate: "2023-10-10",
+  releaseDate: "2023-10-10", video:"/assets/demo.mp4"
 }
 ,
 {
@@ -1178,7 +1279,7 @@ export const movies: Movie[] = [
   desc: "The story of J. Robert Oppenheimer and the creation of the atomic bomb.",
   duration: "3h 0m",
   imdbRating: "8.9",
-  releaseDate: "2023-07-21",
+  releaseDate: "2023-07-21", video:"/assets/demo.mp4"
 },
 {
   id: 89,
@@ -1191,7 +1292,7 @@ export const movies: Movie[] = [
   desc: "An exhilarating action thriller where Vijay takes on a challenging mission to save the day.",
   duration: "2h 45m",
   imdbRating: "8.7",
-  releaseDate: "2025-01-14",
+  releaseDate: "2025-01-14", video:"/assets/demo.mp4"
 }
 ,
 {
@@ -1205,7 +1306,7 @@ export const movies: Movie[] = [
   desc: "Steve Rogers becomes the iconic superhero Captain America to fight for freedom.",
   duration: "2h 4m",
   imdbRating: "6.9",
-  releaseDate: "2011-07-22"
+  releaseDate: "2011-07-22", video:"/assets/demo.mp4"
 }
 ,
 {
@@ -1219,7 +1320,7 @@ export const movies: Movie[] = [
   desc: "Raju, Shyam, and Baburao embark on a hilarious new misadventure.",
   duration: "2h 36m",
   imdbRating: "7.3",
-  releaseDate: "2006-06-09"
+  releaseDate: "2006-06-09", video:"/assets/demo.mp4"
 }
 ,
 {
@@ -1233,7 +1334,7 @@ export const movies: Movie[] = [
   desc: "A delightful journey through Barbie’s magical world.",
   duration: "1h 55m",
   imdbRating: "7.9",
-  releaseDate: "2023-07-21",
+  releaseDate: "2023-07-21", video:"/assets/demo.mp4"
 },
 {
   id: 93,
@@ -1246,7 +1347,7 @@ export const movies: Movie[] = [
   desc: "An intense action-thriller showcasing Shah Rukh Khan in a dual role, fighting for justice and redemption.",
   duration: "2h 49m",
   imdbRating: "8.3",
-  releaseDate: "2023-09-07"
+  releaseDate: "2023-09-07", video:"/assets/demo.mp4"
 }
 ,
 {
@@ -1260,7 +1361,7 @@ export const movies: Movie[] = [
   desc: "A retired jailer takes on a criminal empire.",
   duration: "2h 45m",
   imdbRating: "8.7",
-  releaseDate: "2023-08-10",
+  releaseDate: "2023-08-10", video:"/assets/demo.mp4"
 },
 {
   id: 95,
@@ -1273,7 +1374,7 @@ export const movies: Movie[] = [
   desc: "A haunting tale of revenge and redemption.",
   duration: "2h 20m",
   imdbRating: "7.5",
-  releaseDate: "2023-09-15",
+  releaseDate: "2023-09-15", video:"/assets/demo.mp4"
 },
 {
   id: 96,
@@ -1286,7 +1387,7 @@ export const movies: Movie[] = [
   desc: "A hilarious comedy of errors involving a love story and a mafia family.",
   duration: "2h 39m",
   imdbRating: "7.4",
-  releaseDate: "2007-12-21"
+  releaseDate: "2007-12-21", video:"/assets/demo.mp4"
 }
 ,
 {
@@ -1300,7 +1401,7 @@ export const movies: Movie[] = [
   desc: "A high-octane action thriller with a stellar cast.",
   duration: "2h 53m",
   imdbRating: "8.4",
-  releaseDate: "2022-06-03",
+  releaseDate: "2022-06-03", video:"/assets/demo.mp4"
 },
 {
   id: 98,
@@ -1313,7 +1414,7 @@ export const movies: Movie[] = [
   desc: "A dark and gripping take on the iconic superhero.",
   duration: "2h 56m",
   imdbRating: "8.3",
-  releaseDate: "2022-03-04",
+  releaseDate: "2022-03-04", video:"/assets/demo.mp4"
 },
 {
   id: 99,
@@ -1326,7 +1427,7 @@ export const movies: Movie[] = [
   desc: "Scott Lang and Hope van Dyne explore the Quantum Realm and face new challenges.",
   duration: "2h 5m",
   imdbRating: "6.3",
-  releaseDate: "2023-02-17"
+  releaseDate: "2023-02-17", video:"/assets/demo.mp4"
 }
 ,
 {
@@ -1340,7 +1441,7 @@ export const movies: Movie[] = [
   desc: "Carol Danvers becomes one of the universe's most powerful heroes as she joins the fight to save Earth.",
   duration: "2hours 3minute",
   imdbRating: "6.8",
-  releaseDate: "2019-03-08"
+  releaseDate: "2019-03-08", video:"/assets/demo.mp4"
 },
 
 {
@@ -1354,7 +1455,7 @@ export const movies: Movie[] = [
   desc: "Steve Rogers teams up with Black Widow and Falcon to uncover a conspiracy and face a mysterious assassin, the Winter Soldier",
   duration: "2h 16m",
   imdbRating:"7.8",
-  releaseDate: "2014-04-04"
+  releaseDate: "2014-04-04", video:"/assets/demo.mp4"
 },
 {
   id: 102,
@@ -1367,7 +1468,7 @@ export const movies: Movie[] = [
   desc: "An arranged marriage turns into a tale of love, betrayal, and redemption as career ambitions clash, only for fate to reunite the couple years later in unexpected circumstances.",
   duration: "2 hours 17 minutes",
   imdbRating:"7.6",
-  releaseDate: "November 10, 2017"
+  releaseDate: "November 10, 2017", video:"/assets/demo.mp4"
 },{
   id: 103,
   title: "M.S. Dhoni: The Untold Story",
@@ -1379,7 +1480,7 @@ export const movies: Movie[] = [
   desc: "The journey of Mahendra Singh Dhoni from a small-town boy to one of the greatest cricket captains of India.",
   duration: "3 hours 10 minutes",
   imdbRating: "7.9",
-  releaseDate: "2016-09-30"
+  releaseDate: "2016-09-30", video:"/assets/demo.mp4"
 },
 {
   id: 104,
@@ -1392,7 +1493,7 @@ export const movies: Movie[] = [
   desc: "Three friends navigate through their ambitions, relationships, and hardships in a rapidly changing India.",
   duration: "2hours",
   imdbRating: "7.8",
-  releaseDate: "2013-02-22"
+  releaseDate: "2013-02-22", video:"/assets/demo.mp4"
 },
 {
   id: 105,
@@ -1405,7 +1506,7 @@ export const movies: Movie[] = [
   desc: "The heartwarming story of two cancer patients who fall in love and embark on a beautiful journey of self-discovery.",
   duration: "1hour 41minutes",
   imdbRating: "8.4",
-  releaseDate: "2020-07-24"
+  releaseDate: "2020-07-24", video:"/assets/demo.mp4"
 },{
   id: 106,
   title: "Jism 2",
@@ -1417,7 +1518,7 @@ export const movies: Movie[] = [
   desc: "A porn star is hired by an intelligence officer to trap a deadly assassin, leading to a web of betrayal, love, and revenge.",
   duration: "2hours 10minutes",
   imdbRating: "3.0",
-  releaseDate: "2012-08-03"
+  releaseDate: "2012-08-03", video:"/assets/demo.mp4"
 },{
   id: 107,
   title: "Ragini MMS 2",
@@ -1429,7 +1530,7 @@ export const movies: Movie[] = [
   desc: "A film crew's shooting schedule turns into a nightmare when they realize they're on a haunted set.",
   duration: "1hour 59minutes",
   imdbRating: "4.0",
-  releaseDate: "2014-03-21"
+  releaseDate: "2014-03-21", video:"/assets/demo.mp4"
 }
 ,{
   id: 108,
@@ -1442,7 +1543,7 @@ export const movies: Movie[] = [
   desc: "A woman, accidentally caught in a dark deal, transforms into a superhuman with incredible mental and physical abilities.",
   duration: "1hour 29minutes",
   imdbRating: "6.4",
-  releaseDate: "2014-07-25"
+  releaseDate: "2014-07-25", video:"/assets/demo.mp4"
 }
 ,{
   id: 109,
@@ -1455,7 +1556,7 @@ export const movies: Movie[] = [
   desc: "In a futuristic world, a cyber-enhanced human fights to uncover the truth behind her past and stop dangerous cyber-criminals.",
   duration: "1hour 47minutes",
   imdbRating: "6.3",
-  releaseDate: "2017-03-31"
+  releaseDate: "2017-03-31", video:"/assets/demo.mp4"
 },{
   id: 110,
   title: "Salt",
@@ -1467,7 +1568,7 @@ export const movies: Movie[] = [
   desc: "A CIA officer goes on the run to prove her innocence after being accused of being a Russian spy.",
   duration: "1hour 40minutes",
   imdbRating: "6.4",
-  releaseDate: "2010-07-23"
+  releaseDate: "2010-07-23", video:"/assets/demo.mp4"
 }
 ,{
   id: 111,
@@ -1480,7 +1581,7 @@ export const movies: Movie[] = [
   desc: "A mild-mannered man is forced to confront his dark past when a series of violent incidents reveal his hidden identity.",
   duration: "2hours 44minutes",
   imdbRating: "8.1",
-  releaseDate: "2024-10-19"
+  releaseDate: "2024-10-19", video:"/assets/demo.mp4"
 },{
   id: 112,
   title: "Salaar",
@@ -1492,7 +1593,7 @@ export const movies: Movie[] = [
   desc: "A dark and gritty tale of a man who rises to power, battling against impossible odds and dangerous enemies.",
   duration: "2hours 30minutes",
   imdbRating: "8.5",
-  releaseDate: "2024-12-22"
+  releaseDate: "2024-12-22", video:"/assets/demo.mp4"
 },
 {
   id: 113,
@@ -1505,7 +1606,7 @@ export const movies: Movie[] = [
   desc: "A divine conflict between man and nature unfolds in a rural village in India.",
   duration: "2hours 30minutes",
   imdbRating: "8.4",
-  releaseDate: "2022-09-30"
+  releaseDate: "2022-09-30", video:"/assets/demo.mp4"
 },
 {
   id: 114,
@@ -1518,7 +1619,7 @@ export const movies: Movie[] = [
   desc: "A hot-headed surgeon spirals into self-destruction after his lover marries someone else.",
   duration: "3hours 2minutes",
   imdbRating: "8.1",
-  releaseDate: "2017-08-25"
+  releaseDate: "2017-08-25", video:"/assets/demo.mp4"
 },
 {
   id: 115,
@@ -1531,7 +1632,7 @@ export const movies: Movie[] = [
   desc: "Krishna, blessed with superhuman abilities, takes on the responsibility of saving the world as 'Krrish'.",
   duration: "2 hours 54 minutes",
   imdbRating: "6.4",
-  releaseDate: "2006-06-23"
+  releaseDate: "2006-06-23", video:"/assets/demo.mp4"
 },
 {
   id: 116,
@@ -1544,7 +1645,7 @@ export const movies: Movie[] = [
   desc: "Krrish faces new challenges as he battles an evil genius and discovers his true potential.",
   duration: "2 hours 30 minutes",
   imdbRating: "6.8",
-  releaseDate: "2013-11-01"
+  releaseDate: "2013-11-01", video:"/assets/demo.mp4"
 },
 {
   id: 117,
@@ -1557,7 +1658,7 @@ export const movies: Movie[] = [
   desc: "A developmentally delayed man befriends an alien, sparking miraculous changes in his life.",
   duration: "2 hours 51 minutes",
   imdbRating: "7.1",
-  releaseDate: "2003-08-08"
+  releaseDate: "2003-08-08", video:"/assets/demo.mp4"
 },
 {
   id: 118,
@@ -1570,7 +1671,7 @@ export const movies: Movie[] = [
   desc: "A video game developer's virtual villain, Ra.One, comes to life, wreaking havoc in the real world.",
   duration: "2 hours 36 minutes",
   imdbRating: "4.7",
-  releaseDate: "2011-10-26"
+  releaseDate: "2011-10-26", video:"/assets/demo.mp4"
 },
 {
   id: 119,
@@ -1583,7 +1684,7 @@ export const movies: Movie[] = [
   desc: "A cop teams up with a mechanic to chase a gang of robbers who use high-speed bikes for their heists.",
   duration: "2hours 9minutes",
   imdbRating: "6.7",
-  releaseDate: "2004-08-27"
+  releaseDate: "2004-08-27", video:"/assets/demo.mp4"
 },
 {
   id: 120,
@@ -1596,7 +1697,7 @@ export const movies: Movie[] = [
   desc: "An international thief pits his wits against an elite cop as he executes daring heists.",
   duration: "2hours 32minutes",
   imdbRating: "6.5",
-  releaseDate: "2006-11-24"
+  releaseDate: "2006-11-24", video:"/assets/demo.mp4"
 },
 {
   id: 121,
@@ -1609,7 +1710,7 @@ export const movies: Movie[] = [
   desc: "A circus performer seeks revenge against a corrupt bank, but the cops are on his trail.",
   duration: "2hours 52minutes",
   imdbRating: "5.4",
-  releaseDate: "2013-12-20"
+  releaseDate: "2013-12-20", video:"/assets/demo.mp4"
 },{
   id: 122,
   title: "Guardians of the Galaxy",
@@ -1621,7 +1722,7 @@ export const movies: Movie[] = [
   desc: "A group of intergalactic criminals must pull together to stop a fanatical warrior from taking control of the universe.",
   duration: "2hours 1minute",
   imdbRating: "8.0",
-  releaseDate: "2014-08-01"
+  releaseDate: "2014-08-01", video:"/assets/demo.mp4"
 },
 {
   id: 123,
@@ -1634,7 +1735,7 @@ export const movies: Movie[] = [
   desc: "The Guardians struggle to keep their newfound family together as they unravel the mystery of Peter Quill's true parentage.",
   duration: "2hours 16minutes",
   imdbRating: "7.6",
-  releaseDate: "2017-05-05"
+  releaseDate: "2017-05-05", video:"/assets/demo.mp4"
 },
 {
   id: 124,
@@ -1647,7 +1748,7 @@ export const movies: Movie[] = [
   desc: "The Guardians embark on one last mission to protect their family and discover the secrets of Rocket's past.",
   duration: "2hours 30minutes",
   imdbRating: "8.2",
-  releaseDate: "2023-05-05"
+  releaseDate: "2023-05-05", video:"/assets/demo.mp4"
 },
 {
   id: 125,
@@ -1660,7 +1761,7 @@ export const movies: Movie[] = [
   desc: "Bruce Banner struggles to control his inner monster while being hunted by the U.S. Army.",
   duration: "1hour 52minutes",
   imdbRating: "6.6",
-  releaseDate: "2008-06-13"
+  releaseDate: "2008-06-13", video:"/assets/demo.mp4"
 },
 {
   id: 126,
@@ -1673,7 +1774,7 @@ export const movies: Movie[] = [
   desc: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
   duration: "2hours 12minutes",
   imdbRating: "7.4",
-  releaseDate: "2021-09-03"
+  releaseDate: "2021-09-03", video:"/assets/demo.mp4"
 },
 {
   id: 127,
@@ -1686,7 +1787,7 @@ export const movies: Movie[] = [
   desc: "A unique action-comedy revolving around the world's most famous mythical characters.",
   duration: "2hours",
   imdbRating: "7.0",
-  releaseDate: "2023-12-15"
+  releaseDate: "2023-12-15", video:"/assets/demo.mp4"
 },
 {
   id: 128,
@@ -1699,7 +1800,7 @@ export const movies: Movie[] = [
   desc: "A bank teller discovers he's a background character in an open-world video game and decides to become the hero of his own story.",
   duration: "1hour 55minutes",
   imdbRating: "7.1",
-  releaseDate: "2021-08-13"
+  releaseDate: "2021-08-13", video:"/assets/demo.mp4"
 },
 
 {
@@ -1713,7 +1814,7 @@ export const movies: Movie[] = [
   desc: "As Christian wrestles with his inner demons, Anastasia must confront the anger and envy of the women who came before her.",
   duration: "1hour 58minutes",
   imdbRating: "4.6",
-  releaseDate: "2017-02-10"
+  releaseDate: "2017-02-10", video:"/assets/demo.mp4"
 },
 {
   id: 130,
@@ -1726,7 +1827,7 @@ export const movies: Movie[] = [
   desc: "Newlyweds Christian and Anastasia embrace their life of luxury, but a shadowy figure threatens their happy ending.",
   duration: "1hour 45minutes",
   imdbRating: "4.5",
-  releaseDate: "2018-02-09"
+  releaseDate: "2018-02-09", video:"/assets/demo.mp4"
 },
 {
   id: 131,
@@ -1739,7 +1840,7 @@ export const movies: Movie[] = [
   desc: "The film is based on the life of Maratha warrior Chhatrapati Sambhaji Maharaj, focusing on his struggles and resistance against the Mughal emperor Aurangzeb.",
   duration: "2 hours 41 minutes",
   imdbRating: "9.3",
-  releaseDate: "February 14, 2025"
+  releaseDate: "February 14, 2025", video:"/assets/demo.mp4"
 },
 
 {
@@ -1753,7 +1854,9 @@ export const movies: Movie[] = [
   desc: "The film portrays the journey of the Indian national cricket team and their underdog victory at the 1983 Cricket World Cup under the captaincy of Kapil Dev. It highlights the challenges faced by the team and their triumph against the mighty West Indies in the final.",
   duration: "2 hours 44 minutes",
   imdbRating: "8.2",
-  releaseDate: "December 24, 2021",
+  releaseDate: "December 24, 2021", video:"/assets/demo.mp4"
 },
 
+  
+  
 ];
